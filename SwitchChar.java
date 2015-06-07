@@ -1,3 +1,6 @@
+//A method that takes the first and last characters in a string and switches them
+// by Michael Sharp
+
 public class SwitchChar {
     public static void main(String[] args) {
         System.out.println(SwitchChar("Hello"));
@@ -5,8 +8,6 @@ public class SwitchChar {
         System.out.println(SwitchChar("Bummer man"));
         System.out.println(SwitchChar(""));
     }
-    
-    //A method that takes the first and last characters in a string and switches them
     public static String SwitchChar(String str) {
         char first, last;
         char[] charArray = str.toCharArray();
