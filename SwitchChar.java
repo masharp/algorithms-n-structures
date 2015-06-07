@@ -1,5 +1,7 @@
-//A method that takes the first and last characters in a string and switches them
-// by Michael Sharp
+/* A method that takes the first and last characters in a string and switches them
+ - by Michael Sharp
+ - msharp.oh@gmail.com */
+
 
 public class SwitchChar {
     public static void main(String[] args) {
