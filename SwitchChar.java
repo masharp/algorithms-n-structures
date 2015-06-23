@@ -1,31 +1,37 @@
 /* A method that takes the first and last characters in a string and switches them
  - by Michael Sharp
- - msharp.oh@gmail.com */
+ - msharp.oh@gmail.com 
+  - www.softwareontheshore.com */
 
+import java.util.Scanner;
 
 public class SwitchChar {
+    static Scanner in = new Scanner(System.in);
+    
     public static void main(String[] args) {
-        System.out.println(SwitchChar("Hello"));
-        System.out.println(SwitchChar("Monica"));
-        System.out.println(SwitchChar("Bummer man"));
-        System.out.println(SwitchChar(""));
+        charSwitcher(in.nextLine());
     }
-    public static String SwitchChar(String str) {
+    
+    public static void charSwitcher(String str) {
         char first, last;
         char[] charArray = str.toCharArray();
+        
         int length = (charArray.length-1);
         String newString = "";
 
+        //checks in the string has a value
         if (str.isEmpty() == true) {
-          return str;
-        } else {
+            System.out.println(str);
+        } 
+        
+        else {
          first = charArray[0];
          last = charArray[length];
          charArray[0] =  last;
          charArray[length] = first;
 
          for (char c : charArray) { newString += c;}
-         return newString;
+            System.out.println(newString);
         }
     }
 }
