@@ -1,16 +1,19 @@
 /* A method for taking the first three characters of a string and tripling it
     - by Michael Sharp
-    - msharp.oh@gmail.com
-*/
+    - msharp.oh@gmail.com 
+    - www.softwareontheshore.com */
+
+import java.util.Scanner;
+
 public class FrontTripler {
     
+    static Scanner in = new Scanner(System.in);
+    
     public static void main(String[] args) {
-        System.out.println(FrontTripler("Hello"));
-        System.out.println(FrontTripler("Monica"));
-        System.out.println(FrontTripler("Bummer man"));
-        System.out.println(FrontTripler("hi"));
+        tripleTheFront(in.nextLine());
     }
-  public static String FrontTripler(String str) {
+    
+  public static void tripleTheFront(String str) {
     char[] charArray = str.toCharArray();
     String newString = "";
 
@@ -23,7 +26,8 @@ public class FrontTripler {
         newString += charArray[i];
         }
     }
+    
     //ugly, think about fixing
-    return (newString+newString+newString);
+    System.out.println(newString+newString+newString);
   }
 }
