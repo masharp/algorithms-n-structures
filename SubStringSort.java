@@ -2,10 +2,7 @@
    lexicographically in ascending order.
     - by Michael Sharp
     - msharp.oh@gmail.com
-    - www.softwareontheshore.com
-*/
-
-
+    - www.softwareontheshore.com */
 
 import java.io.*;
 import java.util.*;
