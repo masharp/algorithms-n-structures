@@ -51,3 +51,26 @@ public void treeHeight(Node treeRoot) {
   //adds the root + the greater of the branches
   return 1 + Math.max(treeHeight(treeRoot.left), treeHeight(treeRoot.right));
 }
+
+//inserts a node into a Binary Search Tree at the appropriate position, with recursion
+public Node insertNode(Node root,int value) {
+    if (root == null) {
+
+        Node temp = new Node();
+        temp.left = null;
+        temp.right = null;
+        temp.data = value;
+        
+        return temp;
+    }
+    if (Integer.compare(value, root.data) == 0) {
+        return root;
+    }
+    if (Integer.compare(value, root.data) < 0) {
+        root.left = insertNode(root.left, value);
+    }
+    else {
+        root.right = insertNode(root.right, value);
+    }
+    return root;
+}
