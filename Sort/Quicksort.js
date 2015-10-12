@@ -53,7 +53,7 @@ function quickSort(array, front, end) {
 }
 
 
-/* // CAN ADD A RANDOM PIVOT
+/* // CAN ADD A RANDOM PIVOT, currently not functional (hard to find bug)
 function findRandomPivot(length) {
   var randomsArr = [];
 
@@ -68,4 +68,16 @@ function findRandomPivot(length) {
     return randomsArr[1];
   } else return length;
 }
-} */
+
+PSUDOCODE ---------------------------
+function partition(array, left, right, pivotIndex)
+    pivotValue := array[pivotIndex]
+    swap array[pivotIndex] and array[right] // Move pivot to end
+    storeIndex := left
+    for i  from  left to right - 1 // left ≤ i < right
+        if array[i] ≤ pivotValue
+            swap array[i] and array[storeIndex]
+            storeIndex := storeIndex + 1
+    swap array[storeIndex] and array[right] // Move pivot to its final place
+    return storeIndex
+ */
