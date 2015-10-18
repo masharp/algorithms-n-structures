@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+    <title>Databases | Self-Learning Study Guide</title>
+  </head>
+
+  <body>
+    <div id="title">
+      <h2>Databases</h2>
+      <p><a href="masterStudyGuide.html">Home</a></p>
+    </div>
+    <div id="navigation">
+      <p>
+        Databases:
+	Database Concepts:
+		- Atomic Table:
+			- A table organized in such a way that the information can be accessed in 			a manor that appears to be instantaneous.
+	Normalization:
+	ACID:
+		- Atomicity, Consistency, Isolation, Durability (ACID) is a set of properties that 			guarantee that database transactions are processed reliably.  This means that a 		database transaction is simple, logical, and done in one step.
+		- Atomicity: requires that each transaction be “all or nothing”: if one part fails, all 		fails
+		- Consistency: ensures that any transaction brings the database from one valid 		state 	to another.
+		- Isolation: ensures that the concurrent execution of transactions results in a 			system state that would be obtained if transactions were executed serially.
+		- Durability: means that once a transaction has been committed, it will remain 			so, even in the event of a power failure, crashes, or errors.
+	Transactions:
+	Selects:
+		- Syntax:
+			SELECT (column) FROM (table)
+			WHERE (columnElement = value);
+	Views:
+	Stored Procedures:
+	Triggers:
+	Clustered Index:
+	Non-Clustered Index:
+	ORM:
+		ORM:
+			- Object-Relational Mapping (ORM) is a programming technique for 				converting data between incompatible type systems in -OO programming 			language. This creates a 'virtual object database' that then be mapped to 				more complicated objects.
+		ORM Tools:
+			- Hibernate: widely used open source ORM software
+			- Python Django: ORM tools included with Django
+	H2:
+		- An SQL database written in Java. A lightweight SQL server that can be run in 			memory, embedded, or traditional server configuration.
+	SQLite:
+		- SQLite is a relational database management system contained in a C library. 			Unlike many other database systems, SQLite is not a client-server engine, but is 		embedded in the end-program. It is ACID-compliant and implements most of the 		SQL standard. It is most often used as an embedded database. It is also 				dynamically typed.
+      </p>
+  </body>
+</html>

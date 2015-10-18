@@ -19,26 +19,45 @@ quickSort(numArray, front, end);
 console.log(numArray);
 console.log(iterations + " " + arrayLength);
 
-//-----------------------------------------
-function swap(array, first, second) {
-  var temp = array[first];
-  array[first] = array[second];
-  array[second] = temp;
+/*
+  --------------------
+  This function swaps the indices of two elements in an array passed to it.
+  --------------------
+*/
+function swap(array, firstIndex, secondIndex) {
+  var temp = array[firstIndex];
+  array[firstIndex] = array[secondIndex];
+  array[secondIndex] = temp;
 }
-function partition(array, p, r) {
-  var pivot = array[r];
-  var q = p;
+/*
+  --------------------
+  This is the quiksort partitioning funtion that takes the array, front starting
+  element, and ending element. The function uses the right-most element as a pivot
+  and sorts all elements <pivot to the right, and >pivot to the left. It then
+  returns the index of the pivot in the array.
+  --------------------
+*/
+function partition(array, front, end) {
+  var pivot = array[end];
+  var index = front;
 
-  for(var j = p; j < r; j++) {
+  for(var j = front; j < end; j++) {
     if(array[j] <= pivot) {
-      swap(array, j, q);
-      q++;
+      swap(array, front, index);
+      index++;
       iterations++;
     }
   }
-  swap(array, q, r);
-  return q;
+  swap(array, index, end);
+  return index;
 }
+/*
+  --------------------
+  This is the main QuickSort function that recursively sorts the array by
+  partitioning the array into halfs and then sorting based on the partitioning
+  function.
+  --------------------
+*/
 function quickSort(array, front, end) {
     var index;
 
@@ -53,7 +72,13 @@ function quickSort(array, front, end) {
 }
 
 
-/* // CAN ADD A RANDOM PIVOT, currently not functional (hard to find bug)
+/*
+  --------------------
+  This is a series of functions that adds random characteristics to the selection
+  of the pivot. Includes psudocode.
+  It currently has a bug that results in a randomly sorted array.
+  --------------------
+
 function findRandomPivot(length) {
   var randomsArr = [];
 

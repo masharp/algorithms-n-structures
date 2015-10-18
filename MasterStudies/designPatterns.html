@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+    <title>Design Patterns | Self-Learning Study Guide</title>
+  </head>
+
+  <body>
+    <div id="title">
+      <h2>Design Patterns</h2>
+      <p><a href="masterStudyGuide.html">Home</a></p>
+    </div>
+    <div id="navigation">
+      <p>
+        Design Patterns:
+	- Factory Pattern:
+		- Use:
+			- When a method returns one of several possible classes that share a 				common superclass.
+		- Advantages:
+		- Disadvantages:
+		- Examples:
+			- Create a new enemy in a game → Random number generator picks a 				number assigned to a specific enemy → the factory returns the enemy 				associated with that number → the class is chosen at rune time.
+	- Strategy (Policy) Pattern:
+		- Use:
+			- Allows the engineer to code to an interface and encapsulate the 					concepts that vary. Many related classes differ in their behavior, but are 				tightly coupled. You may need different variants of an algorithm or you 				may need to decouple complex, algorithm-specific data structures from 				the client that uses them.
+		- Advantages:
+			- Allows for the implementation of different behavioral algorithms in a 				separate class hierarchy with an interface at the root.
+			- Allows for the decoupling of the object which uses the encapsulated 				'strategies' and the algorithms themselves so that they can vary 					independently.
+		- Disadvantages:
+			- May result in many more classes/objects
+		- Examples:
+			-
+	- Observer (Publisher/Subscriber) Pattern:
+		- Use:
+			- Allows the engineer to update many other objects when one specific 				object is updated/changed.
+		- Advantages:
+			- Loose coupling means that the publisher does not need to know 					anything about the subscribers.
+			- The publisher object maintains list of dependents called subscribers and 			notifies them accordingly of any state changes, usually by calling one of 				their methods.
+		- Disadvantages:
+			- Publisher may send updates that don't matter to a particular subscriber.
+		- Examples:
+	- Decorator (Wrapper) Pattern:
+		- Use:
+			- Allows the engineer to attach additional responsibilities to an object 				dynamically. Decorators provide a flexible alternative to subclassing.
+		- Advantages:
+			- More flexibility than static inheritance. Object responsibilities can be 				added and removed at rune-time simply by attaching or detaching them.
+			- Avoids feature-bloated classes high up in the hierarchy. Instead of 				adding every enforceable feature up front, you can add small features 				and functionality as you go.
+		- Disadvantages:
+			- A decorator and it's components are identical. Hence you should not rely 			on object identity when you use decorators.
+			- Lots of little objects. A design with decorators have a lot of little objects 				that look alike. They differ only in the way they are interconnected.
+		- Examples:
+			- A common use of the decorator pattern is in GUIs, in order to add 				graphical embellishments to widgets.
+      </p>
+  </body>
+</html>

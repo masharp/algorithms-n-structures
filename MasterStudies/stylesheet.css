@@ -1,0 +1,24 @@
+body, html {
+  font-size: 40px;
+  color: orange;
+  background-color: brown;
+  text-align: center;
+}
+#title {
+  font-size: .7em;
+}
+#navigation {
+  margin: 0 auto;
+  font-size: .6em;
+  width: 60%;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
