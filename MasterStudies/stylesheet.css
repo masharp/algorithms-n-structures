@@ -17,8 +17,14 @@ ul {
 }
 li {
   padding-bottom: 10px;
+
+    color: white;
 }
 a {
   color: white;
   text-decoration: none;
+}
+#body {
+  text-align: left;
+  font-size: .5em;
 }
