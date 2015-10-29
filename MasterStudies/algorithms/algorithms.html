@@ -1,110 +1,67 @@
-<html>
+<html ng-app="studyGuide">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script type="text/javascript" src="algorithms.js"></script>
 
     <title>Algorithms | Self-Learning Study Guide</title>
   </head>
 
   <body>
     <div id="title">
-      <h2>Algorithms</h2>
-      <p><a href="masterStudyGuide.html">Home</a></p>
+      <h1>Algorithms</h2>
+      <a href="../masterStudyGuide.html">Home</a></br>
+      <em><a href="#sort">Sort</a></br></em>
+      <em><a href="#search">Search</a></em>
     </div>
-    <div id="navigation">
-      <p>
-        Algorithms -
-	Sort:
-		Insertion Sort:
-			- Sorts an element by checking each element in a collection and inserting 			the value into the proper place.
-			Psudocode:
-				a) Get newElement & set temp → beginningElement
-				b) If temp > newElement, array[temp] + 1
-				c) temp = temp (-/+) 1
-				d) continue until temp < newElement
-				c) newElement = array[temp] + 1
-			APIs:
-			Efficiency: Θ(n^2)
-		Merge Sort:
-			- Merge sort is one of the most basic sorting algorithms. It is a 					comparison based sorting algorithm that divides the entire dataset into 				groups of, at most, two. It then compares each number one at a time, 				moving the smallest number to the left of the pair. Once all pairs are 				sorted it then compares the left most elements of the two leftmost pairs 				creating a sorted group of four with the smallest number on the left and 				the largest on the right. This process is repeated until there is only one 				set. “Divide and Conquer” algorithm.
-			Psudocode: Merge Sort - GitHub
-			APIs:
-			Efficiency:
-				- Best Case: Θ(n)
-				- Average Case: Θ(n log n)
-				- Worst Case: Θ(n log n)
-		Quicksort:
-			- Quicksort is a comparison based sorting algorithm that divides an entire 			dataset in half by selecting the average element and putting all smaller 				elements to the left of the average. It repeats this process of the left side 				until it is comparing only two elements at which point the left side is 				sorted. When the left side is sorted, it performs the same operation on the 			right side. Computer architecture usually favors the quicksort process. 				While it has the same Big O as many other sorting algorithms, or worse in 			some cases, it is often faster in practice than many other sorting 					algorithms such as Merge sort. Quicksort is often implemented as a 				recursive function.
-			Implementation: Quicksort - GitHub
-			APIs:
-			Efficiency:
-				- Best Case: Θ(n)
-				- Average Case: Θ(n log n)
-				- Worst Case: Θ(n^2)
-		Bubble Sort:
-			- Bubble sort is a comparison based algorithm that iterates from left to 				right and compares each couplet, moving the smaller element to the left. 				It repeats this process until it can no longer move an element to the left. 				While simple to implement, it is the least efficient, especially on larger 				datasets.
-			Implementation: BubbleSort - GitHub
-			APIs:
-			Efficiency:
-				- Best Case: Θ(n)
-				- Average Case: Θ(n^2)
-				- Worst Case: Θ(n^2)
-		 Selection Sort:
-			- Selection sort is a comparison based algorithm that takes each element 			of a dataset and compares it to the rest of the dataset in order to find a 				smaller element. If found, the element's positions in the dataset are 				swapped.
-			Implementation: SelectionSort - GitHub
-			APIs:
-			Efficiency:
-				- Best Case:
-				- Average Case:
-				- Worst Case:
-	Search:
-		Breadth-First-Search (BFS):
-			- An algorithm that searches a tree or graph by searching levels of the 				tree first, starting at the root. It finds every node on the same level, most 				often moving left to right. While doing this, it tracks the children nodes of 				the nodes on the current level. When finished examining a level it moves 				to the left-most node on the current level. The bottom right  node is 				evaluated last (the node that is deepest and farthest right of the tree's 				level). A BFS is optimal for searching a tree that is wider than it is deep. 				Uses a queue to store information about the tree as the tree is traversed. 				Because the queue stores pointers, it is more memory intensive than a 				DFS. This search algorithm tends to use looping.
-			Psudocode:
-			APIs:
-			Efficiency: Θ(|E|+|V|) – E is edges, V is vertices
-		Depth-First-Search (DFS):
-			- An algorithm that searches a tree or graph by searching branches of the 			tree first, starting at the root. It traverses left down a tree until it cannot go 			further. Once it reaches the end of the tree, it traverses back up trying the 			right child of nodes on that branch and if possible the left children of those 			right children. When finished with that branch, it moves to the node right 				and tries to left on all of its children until it reaches the bottom. The right 				node is evaluated last. A DFS is optimal for a tree that is deeper than it is 				wide. It uses a stack to push nodes, which is LIFO and does not need to 				keep track of pointers and is therefore less memory intensive than a BFS. 			Once it cannot go further left, it evaluates the stack. This search algorithm 			tends to use recursion.
-			Psudocode:
-			APIs:
-			Efficiency: Θ(|E|+|V|) – E is edges, V is vertices
-	Algorithm Types:
-		Recursive:
-			- Recursion is an algorithm that calls itself in order to solve a problem. 				This involves a base case, which returns a value without making any 				subsequent recursive calls (usually 1 or 0), and a recursive step which 				relates the function at one input to another input and must converge to 				the base case.
-			Advantages:
-				- Easier to visualize.
-				- More elegant, ie. Reduces code size in complex iterations.
-			Disadvantages:
-				- Harder to understand .
-				- The larger the input, the more memory allocated which can cause 				it to slow or throw stack overflow errors, which usually means that 					your base case never triggers.
-		Iterative:
-			- Iterative algorithms are called repeatedly but for a finite amount of times, 			each time being a single iteration. This is often used to move 					incrementally through a dataset.  This is generally implemented with 				loops, such as for and while.
-			Advantages:
-				- Generally uses less memory
-				- Useful for moving through an array
-			Disadvantages:
-		Greedy:
-			- A greedy algorithm is an algorithm that, while executing, selects only the 			information that meets certain criteria. The five components of a greedy 				algorithm are: A) A candidate set, from which a solution is created. B) A 				selection function, which chooses the best candidate to be added to the 				solution. C) A feasibility function, that is used to determine if a candidate 				can be used to contribute to a solution. D) An objective function, which 				assigns a value to a solution, or a partial solution. E) A solution function, 				which will indicate when the algorithm has discovered a complete 					solution. Greedy algorithms are used to find the optimal solution for a 				given problem. Generally used on only on sets of data where only a small 			portion of the data evaluated meets the desired result. Often a greedy 				algorithm can help reduce the Big O of an implemented algorithm.
-			Psudocode:
-			- greed algorithm (array)
-				- var largest difference = 0
-				- var new difference = find next difference (array[n], array[n+1])
-				- largest difference =  new difference if is > largest difference
-				- repeat above two steps until all differences have bee found
-				- return largest difference
-		Average of Numbers in an Array:
-		Data Structure Retrieval:
-		Tree:
-		Graph:
-		Divide and Conquer:
-		Matrix Levels:
-		Numerical Computation Algorithms:
-		NP Problems:
-    Automata:
-	- Automata are abstract models of machines that perform calculations on an input by 	moving through a series of states or configurations. At each state, a transition function 	determines the next configuration based on a finite portion of the current configuration. 	Characteristics include inputs(sequence of symbols), outputs (sequence of symbols 	that meets conditions), and states (definition depends on automata type).
-	- Finite State Machine:
-	- Pushdown Automata:
-	- Linear-bounded Automata:
-	- Turing Machine:
-      </p>
+    <div id="body" ng-controller="StudyController as study" class="container">
+      <h2>General</h2>
+      <ul class="list-group">
+        <li class="list-group-item" ng-repeat="note in study.general | orderBy:'-title'">
+          <h3>{{note.title}}</h3>
+          <p>- {{note.content}}</p>
+        </li>
+      </ul>
+      <h2 id="sort">Sorting Algorithms</h2>
+      <ul class="list-group">
+        <li class="list-group-item" ng-repeat="sort in study.sorting | orderBy:'-title'">
+          <h3>{{sort.title}}</h3>
+          <b>Description:</b>
+          <p ng-repeat="description in sort.descriptions">- {{description}}</p>
+          <b>Advantages:</b>
+          <p ng-repeat="advantage in sort.advantages">- {{advantage}}</p>
+          <b>Disadvantages:</b>
+          <p ng-repeat="disadvantage in sort.disadvantages">- {{disadvantage}} </p>
+          <b>Psudocode:</b>
+          <p ng-repeat="psudocode in sort.psudocode">- {{psudocode}} </p>
+          <b>Analysis:</b>
+          <p ng-repeat="analysis in sort.analysis">- {{analysis}} </p>
+          <b>Code:</b>
+          <p><a href="{{sort.code[1]}}" target="_blank">{{sort.code[0]}}</a></p>
+        </li>
+      </ul>
+
+      <h2 id="search">Searching Algorithms</h2>
+      <ul class="list-group">
+        <li class="list-group-item" ng-repeat="search in study.searching | orderBy:'-title'">
+          <h3>{{search.title}}</h3>
+          <b>Description:</b>
+          <p ng-repeat="description in search.descriptions">- {{description}}</p>
+          <b>Advantages:</b>
+          <p ng-repeat="advantage in search.advantages">- {{advantage}}</p>
+          <b>Disadvantages:</b>
+          <p ng-repeat="disadvantage in search.disadvantages">- {{disadvantage}} </p>
+          <b>Psudocode:</b>
+          <p ng-repeat="psudocode in search.psudocode">- {{psudocode}} </p>
+          <b>Analysis:</b>
+          <p ng-repeat="analysis in search.analysis">- {{analysis}} </p>
+          <b>Code:</b>
+          <p><a href="{{search.code[1]}}">{{search.code[0]}}</a></p>
+        </li>
+      </ul>
   </body>
 </html>
