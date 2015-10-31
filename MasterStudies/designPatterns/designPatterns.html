@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <script type="text/javascript" src="designPatterns.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="../section-style.css"/>
 
     <title>Design Patterns | Self-Learning Study Guide</title>
   </head>
@@ -18,7 +18,7 @@
     </div>
     <div id="body" ng-controller="StudyController as study" class="container">
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="section in study.sections | orderBy:'-title'">
+        <li class="list-group-item" ng-repeat="section in study.sections | orderBy:'title'">
           <h3><b>{{section.title}}</b></h3>
           <b>Uses:</b>
           <p ng-repeat="use in section.uses">- {{use}}</p>

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="../section-style.css"/>
     <script type="text/javascript" src="algorithms.js"></script>
 
     <title>Algorithms | Self-Learning Study Guide</title>
@@ -15,20 +15,20 @@
     <div id="title">
       <h1>Algorithms</h2>
       <a href="../masterStudyGuide.html">Home</a></br>
-      <em><a href="#sort">Sort</a></br></em>
+      <em><a href="#sort">Sort</a></em></br>
       <em><a href="#search">Search</a></em>
     </div>
     <div id="body" ng-controller="StudyController as study" class="container">
       <h2>General</h2>
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="note in study.general | orderBy:'-title'">
+        <li class="list-group-item" ng-repeat="note in study.general | orderBy:'title'">
           <h3>{{note.title}}</h3>
           <p>- {{note.content}}</p>
         </li>
       </ul>
       <h2 id="sort">Sorting Algorithms</h2>
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="sort in study.sorting | orderBy:'-title'">
+        <li class="list-group-item" ng-repeat="sort in study.sorting | orderBy:'title'">
           <h3>{{sort.title}}</h3>
           <b>Description:</b>
           <p ng-repeat="description in sort.descriptions">- {{description}}</p>
@@ -47,7 +47,7 @@
 
       <h2 id="search">Searching Algorithms</h2>
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="search in study.searching | orderBy:'-title'">
+        <li class="list-group-item" ng-repeat="search in study.searching | orderBy:'title'">
           <h3>{{search.title}}</h3>
           <b>Description:</b>
           <p ng-repeat="description in search.descriptions">- {{description}}</p>
