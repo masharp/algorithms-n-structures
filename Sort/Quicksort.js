@@ -3,7 +3,40 @@
 elements are sorted in -141- iterations.
   - by Michael Sharp
   - msharp.oh@gmail.com
-  - www.softwareontheshore.com */
+  - www.softwareontheshore.com
+
+------------------------------------------
+  The below code is based on the following psudocode, but modified for a for-loop:
+      - QuickSort(array, front, end)
+          if front < end
+            then pivot = randomizedPartition(array, front end)
+              QuickSort(array, front, pivot)
+              QuickSort(array, pivot+1, end)
+
+      - Partition(Array, front, end)
+          x = Array[front]
+          i = front - 1
+          j = end + 1
+
+          while TRUE
+            do repeat (j--)
+              until Array[j] <= x
+            do repeat (i++)
+              until Array[i] >= x
+            if (i < j)
+              then swap Array[i] with Array[j]
+            else
+              return j
+
+        - randomizedPartition(Array,front, end)
+            i = random(front, end)
+            swap Array[front] with Array[i]
+            return Parition(Array, front)
+
+        - random(front, end)
+          x = Math.random(between front and end)
+          return x
+  */
 
 var numArray = [12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663, 99, 46, 2, 124, 18, 22,
                 144, 1235, 29772, 1912873, -19, 928282, 4759302, 0, 2938, 21, 222, 98,
@@ -93,16 +126,4 @@ function findRandomPivot(length) {
     return randomsArr[1];
   } else return length;
 }
-
-PSUDOCODE ---------------------------
-function partition(array, left, right, pivotIndex)
-    pivotValue := array[pivotIndex]
-    swap array[pivotIndex] and array[right] // Move pivot to end
-    storeIndex := left
-    for i  from  left to right - 1 // left ≤ i < right
-        if array[i] ≤ pivotValue
-            swap array[i] and array[storeIndex]
-            storeIndex := storeIndex + 1
-    swap array[storeIndex] and array[right] // Move pivot to its final place
-    return storeIndex
- */
+*/

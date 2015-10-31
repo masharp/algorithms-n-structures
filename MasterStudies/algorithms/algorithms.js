@@ -8,7 +8,7 @@
   var general = [
     {
       title: "Heuristics",
-      content: "-"
+      content: "An approximation to something that is relavant to the problem. Heursistics are often computed by their own algorithm. These are often faster in average real-world applications. An example: in order to find the shortest path to a location, find the measured distance between the two locations."
     },
     {
       title: "Recursion",
@@ -44,12 +44,44 @@
       content: "-"
     },
     {
-      title: "NP Problems",
-      content: "-"
+      title: "NP Problems (Non-Deterministic Polynomial)",
+      content: "Also known as NP-Complete problems. These are problems that are answered by insufficiently slow algorithms. The efficient answer to the problem is unknown."
     },
     {
       title: "Automata",
-      content: "- Automata are abstract models of machines that perform calculations on an input by 	moving through a series of states or configurations. At each state, a transition function 	determines the next configuration based on a finite portion of the current configuration. 	Characteristics include inputs(sequence of symbols), outputs (sequence of symbols 	that meets conditions), and states (definition depends on automata type).      - Finite State Machine: - Pushdown Automata: - Linear-bounded Automata: - Turing Machine:"
+      content: "Automata are abstract models of machines that perform calculations on an input by moving through a series of states or configurations. At each state, a transition function 	determines the next configuration based on a finite portion of the current configuration. 	Characteristics include inputs(sequence of symbols), outputs (sequence of symbols 	that meets conditions), and states (definition depends on automata type).      - Finite State Machine: - Pushdown Automata: - Linear-bounded Automata: - Turing Machine:"
+    },
+    {
+      title: "Approximate Algorithms",
+      content: "Acceptable algorithms that sacrifice accuracy for speed."
+    },
+    {
+      title: "Randomized Algorithms",
+      content: "These algorithms include a randomized element in some way. These often make very good average case algorithms. Ramdomized algorithms are attractively simple and often faster."
+    },
+    {
+      title: "Compression",
+      content: "Algorithms that allow an output file to contain the least amount of bytes while attaining an acceptable quality. Example: .jpg."
+    },
+    {
+      title: "Logarithms",
+      content: "This is the inverse of exponentials, which means they grow very slowly. Exponentials grow rapidly."
+    },
+    {
+      title: "Asymptotic Analysis",
+      content: "This kind of analysis is concerned with the 'rate of growth' of a function, based on the size of the inputs in an algorithm. There are three types of asymptotic analysis: Theta, O, Omega."
+    },
+    {
+      title: "Big-Theta \u03B8",
+      content: "Asymptotically tight-bound on the running time. Asymptotically because it matters for only large values of N. tight-bound because we've nailed the running time to within the contstant factor above and below."
+    },
+    {
+      title: "Big-O",
+      content: "Asymptotically upper bound. Used to express that the running time grows at most 'this much,' but it could grow more slowly. This notation bounds the growth only to a constant factor above."
+    },
+    {
+      title: "Big-Omega \u03A9",
+      content: "Asymptotically lower bound. Used to express the 'least' amount of running time. This notation bounds the growth only to a constant factor below."
     },
   ];
   var sorting = [
@@ -110,7 +142,8 @@
       title: "QuickSort",
       descriptions: [
         "Divide & Conquer Algorithm",
-        "QuickSort is a comparison based sorting algorithm that divides an entire dataset in half by selecting the a pivot element (usually the farthest right) and putting all smaller elements to the left of the average. It repeats this process recursively on the two subarrays. While it has the same Big O as many other sorting algorithms, or worse in some cases, it is often faster in practice than many other sorting algorithms such as Merge Sort."
+        "QuickSort is a comparison based sorting algorithm that divides an entire dataset in half by selecting the a pivot element (usually the farthest right) and putting all smaller elements to the left of the average. It repeats this process recursively on the two subarrays and sorts in place. While it has the same Big O as many other sorting algorithms, or worse in some cases, it is often faster in practice than many other sorting algorithms such as Merge Sort.",
+        "The addition of a randomized pivot greatly decreases the probability of getting a worst case (3-1 balance). This can be done by taking the median of 3 or more randomly chosen elements."
       ],
       advantages: [
         "-"
@@ -119,7 +152,9 @@
         "-"
       ],
       psudocode: [
-        ""
+        "Divide: Choose a pivot and arrange the elements so that all elements less than the pivot are to the left of the pivot and the larger to the right. The pivot is then placed in its place and its index returned by this step.",
+        "Conquer: Recursively call the QuickSort function based on the divide step.",
+        "Combine: This step does nothing, the recursive conquer step completes the algorithm."
       ],
       analysis: [
         "Best Case: \u0398(n)",
@@ -234,7 +269,7 @@
     {
       title: "Binary Search",
       descriptions: [
-         "-"
+         "Binary Search divides in half the portion of the list that contains the item, until it is narrowed to just one."
        ],
       advantages: [
         "-"
@@ -243,7 +278,11 @@
         "-"
       ],
       psudocode: [
-        ""
+        "Let min = 0, max = n - 1.",
+        "Compute a guess as the average of the max and min, rounded down.",
+        "If guess = target, return guess.",
+        "If array[guess] < target --> min = guess - 1.",
+        "Else min = guess + 1."
       ],
       analysis: [
         "Best Case: \u0398()",
