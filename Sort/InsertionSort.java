@@ -1,5 +1,6 @@
-/* This is a standard Insertion Sort function for taking the last element of the array,
-which is recently added, and sorting it into the sorted portion of the array.
+/* This is an implementation of Insertion Sort function. This function assumes that the array is already sorted,
+  except for the last element. The algorithm shifts elements larger than the unsorted value to the right one 
+  index until an element less than or equal to the value is found. The value is then inserted there.
 
     - by Michael Sharp
     - msharp.oh@gmail.com
@@ -22,7 +23,7 @@ which is recently added, and sorting it into the sorted portion of the array.
              if (i == 0) {
                  numArray[i+1] = numArray[i];
                  numArray[i] = unsortedValue;
-                 
+
              }
          }
     }

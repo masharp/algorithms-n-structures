@@ -32,7 +32,7 @@
     },
     {
       title: "Divide and Conquer",
-      content: "-"
+      content: "An algorithm structure that divides a problem into sub-problems and then conquers or solves these smaller problems. The last step is usually a combination step of some kind."
     },
     {
       title: "Matrix Levels",
@@ -88,13 +88,13 @@
     {
       title: "Insertion Sort",
       descriptions: [
-        "Sorts an element by checking each element in a collection and inserting the sorted value into the proper place."
+        "Sorts a data set by adding an unsorted element to a sorted array and then sorting that element. This is done by shifting each element larger than the unsorted element to the right one place until a it reaches an element lesser or equal value. The value is then inserted there."
       ],
       advantages: [
-        "-"
+        "Good for relatively very small datasets."
       ],
       disadvantages: [
-        "-"
+        "Slow with larger datasets."
       ],
       psudocode: [
         "A) Get newElement & set temp -> beginningElement",
@@ -104,7 +104,7 @@
         "E) newElement = array[temp] + 1"
       ],
       code: [
-        "Merge Sort - GitHub",
+        "Insertion Sort - GitHub",
         "https://github.com/masharp/useful-algorithms/blob/master/Sort/MergeSort.js"
       ],
       analysis: [
@@ -146,10 +146,11 @@
         "The addition of a randomized pivot greatly decreases the probability of getting a worst case (3-1 balance). This can be done by taking the median of 3 or more randomly chosen elements."
       ],
       advantages: [
-        "-"
+        "Can sort in place.",
+        "Works well with common computer architecture."
       ],
       disadvantages: [
-        "-"
+        "Very large datasets can cause stack overflow problems if it performs at or near its worst case."
       ],
       psudocode: [
         "Divide: Choose a pivot and arrange the elements so that all elements less than the pivot are to the left of the pivot and the larger to the right. The pivot is then placed in its place and its index returned by this step.",
