@@ -1,6 +1,6 @@
 /* This is a Selection Sort sorting algorithm that compares each element in the array to the rest of the array in search
-of a smaller element. If found, the algorithm swaps the smaller element's position with the larger element's position.
-The below array of 40 unsorted elements are sorted in -36- selections.
+  of a smaller element. If found, the algorithm swaps the smaller element's position with the larger element's position.
+  
   - by Michael Sharp
   - msharp.oh@gmail.com
   - www.softwareontheshore.com */
