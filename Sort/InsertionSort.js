@@ -1,11 +1,23 @@
 /* This is an implementation of Insertion Sort. Each element of an unsorted array is added to a sorted array.
   The 'sorted array' is then sorted with Insertion Sort. During this step, the last element, which is
-  unsorted, is then sorted. The algorithm shifts elements larger than the unsorted value to the right one 
+  unsorted, is then sorted. The algorithm shifts elements larger than the unsorted value to the right one
   index until an element less than or equal to the value is found. The value is then inserted there.
 
     - by Michael Sharp
     - msharp.oh@gmail.com
     - www.softwareontheshore.com
+    ------------------------------------
+
+    Psudocode:
+      - Add the new value to a sorted or empty Array
+      - For each element in the array
+        if element > newValue
+          element + 1 = element
+        if element < newValue
+          element + 1 = newValue
+        if at the beginning of array
+          element + 1 = element
+          element = newValue
 */
 (function() {
 

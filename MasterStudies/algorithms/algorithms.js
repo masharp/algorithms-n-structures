@@ -49,7 +49,7 @@
     },
     {
       title: "Automata",
-      content: "Automata are abstract models of machines that perform calculations on an input by moving through a series of states or configurations. At each state, a transition function 	determines the next configuration based on a finite portion of the current configuration. 	Characteristics include inputs(sequence of symbols), outputs (sequence of symbols 	that meets conditions), and states (definition depends on automata type).      - Finite State Machine: - Pushdown Automata: - Linear-bounded Automata: - Turing Machine:"
+      content: "Automata are abstract models of machines that perform calculations on an input by moving through a series of states or configurations. At each state, a transition function determines the next configuration based on a finite portion of the current configuration. Characteristics include inputs(sequence of symbols), outputs (sequence of symbols that meets conditions), and states (definition depends on automata type). Types of automata: Finite State Machine, Pushdown Automata, Linear-bounded Automata, Turing Machine."
     },
     {
       title: "Approximate Algorithms",
@@ -83,6 +83,10 @@
       title: "Big-Omega \u03A9",
       content: "Asymptotically lower bound. Used to express the 'least' amount of running time. This notation bounds the growth only to a constant factor below."
     },
+    {
+      title: "Recursion",
+      content: "Algorithms that follow the basic idea that to solve a problem, solve a subproblem that is a smaller instance of the same problem, and then use the solution to that smaller problem to solve the original problem. Each recursion call should be on a smaller instance of the same problem. The recursive call must eventually reach a base case, which is solved without recursion. The use of recursion is represented infomatically by a 'recursion tree.'"
+    },
   ];
   var sorting = [
     {
@@ -91,7 +95,7 @@
         "Sorts a data set by adding an unsorted element to a sorted array and then sorting that element. This is done by shifting each element larger than the unsorted element to the right one place until a it reaches an element lesser or equal value. The value is then inserted there."
       ],
       advantages: [
-        "Good for relatively very small datasets."
+        "Moderately fast for relatively very small datasets."
       ],
       disadvantages: [
         "Slow with larger datasets."
@@ -104,13 +108,13 @@
         "E) newElement = array[temp] + 1"
       ],
       code: [
-        "Insertion Sort - GitHub",
-        "https://github.com/masharp/useful-algorithms/blob/master/Sort/MergeSort.js"
+        "Insertion Sort - JavaScript",
+        "https://github.com/masharp/useful-algorithms/blob/master/Sort/InsertionSort.js"
       ],
       analysis: [
-        "Best Case: \u0398()",
+        "Best Case: \u0398(n)",
         "Average Case: \u0398(n^2)",
-        "Worst Case: \u0398()"
+        "Worst Case: \u0398(n^2)"
       ]
     },
     {
@@ -197,10 +201,10 @@
         "Selection sort is a comparison based algorithm that takes each element of a dataset and compares it to the rest of the dataset in order to find a smaller element. If found, the element's positions in the dataset are swapped."
       ],
       advantages: [
-        "-"
+        ""
       ],
       disadvantages: [
-        "-"
+        "Slow for moderate to large datasets."
       ],
       psudocode: [
         ""
