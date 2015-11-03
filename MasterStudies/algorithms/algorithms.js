@@ -16,7 +16,7 @@
     },
     {
       title: "Iteration",
-      content: "Iterative algorithms are called repeatedly but for a finite amount of times,	each time being a single iteration. This is often used to move incrementally through a dataset. This is generally implemented with loops, such as for and while."
+      content: "Iterative algorithms are called repeatedly but for a finite amount of times, each time being a single iteration. This is often used to move incrementally through a dataset. This is generally implemented with loops, such as for and while. Iteration generally uses less memory, is easier to understand, and is useful for moving through datasets."
     },
     {
       title: "Average of Numbers in an Array",
@@ -85,7 +85,12 @@
     },
     {
       title: "Recursion",
-      content: "Algorithms that follow the basic idea that to solve a problem, solve a subproblem that is a smaller instance of the same problem, and then use the solution to that smaller problem to solve the original problem. Each recursion call should be on a smaller instance of the same problem. The recursive call must eventually reach a base case, which is solved without recursion. The use of recursion is represented infomatically by a 'recursion tree.'"
+      content: "Algorithms that follow the basic idea that to solve a problem, solve a subproblem that is a smaller instance of the same problem, and then use the solution to that smaller problem to solve the original problem. Each recursion call should be on a smaller instance of the same problem. The recursive call must eventually reach a base case, which is solved without recursion. The use of recursion is represented infomatically by a 'recursion tree.' Recursion is often easier to visualize and can be written more elegantly, however it is harder to understand and can run into memory issues on very large inputs."
+    },
+    {
+      title: "Greedy Algorithms",
+      content: "A greedy algorithm is an algorithm that, while executing, selects only the information that meets certain criteria. The five components of a greedy algorithm are: A) A candidate set, from which a solution is created. B) A selection function, which chooses the best candidate to be added to the solution. C) A feasibility function, that is used to determine if a candidate can be used to contribute to a solution. D) An objective function, which assigns a value to a solution, or a partial solution. E) A solution function, which will indicate when the algorithm has discovered a complete solution. Greedy algorithms are used to find the optimal solution for a given problem. Generally used on only on sets of data where only a small portion of the data evaluated meets the desired result. Often a greedy algorithm can help reduce the Big-O of an implemented algorithm."
+
     },
   ];
   var sorting = [
@@ -124,13 +129,16 @@
         "Merge sort is one of the most basic sorting algorithms. It is a comparison based sorting algorithm that divides the entire dataset into 	groups of, at most, two. It then compares each number one at a time,moving the smallest number to the left of the pair. Once all pairs are sorted it then compares the left most elements of the two leftmost pairs creating a sorted group of four with the smallest number on the left and the largest on the right. This process is repeated until there is only one set."
       ],
       advantages: [
-        "-"
+        "A very reliable and efficient running time.",
+        "Produces a stable sort, meaning that the algorithm preserves the input order of equal elements in the sorted output array."
       ],
       disadvantages: [
         "-"
       ],
       psudocode: [
-        "-"
+        "Divide: Find the middle of the unsorted array.",
+        "Conquer: Revursively call mergeSort on the two subarrays.",
+        "Combine: Sort the two subarrays into a combined single sorted array."
       ],
       code: [
         "Merge Sort - JavaScript",
@@ -301,32 +309,3 @@
     },
   ];
 })();
-
-/*
-
-UNADDED NOTES
-------------
-RECURSION:
-  Advantages:
-    - Easier to visualize.
-    - More elegant, ie. Reduces code size in complex iterations.
-    Disadvantages:
-    - Harder to understand .
-    - The larger the input, the more memory allocated which can cause 				it to slow or throw stack overflow errors, which usually means that 					your base case never triggers.
-Iterative:
-  Advantages:
-    - Generally uses less memory
-    - Useful for moving through an array
-  Disadvantages:
-
-Greedy:
-- A greedy algorithm is an algorithm that, while executing, selects only the 			information that meets certain criteria. The five components of a greedy 				algorithm are: A) A candidate set, from which a solution is created. B) A 				selection function, which chooses the best candidate to be added to the 				solution. C) A feasibility function, that is used to determine if a candidate 				can be used to contribute to a solution. D) An objective function, which 				assigns a value to a solution, or a partial solution. E) A solution function, 				which will indicate when the algorithm has discovered a complete 					solution. Greedy algorithms are used to find the optimal solution for a 				given problem. Generally used on only on sets of data where only a small 			portion of the data evaluated meets the desired result. Often a greedy 				algorithm can help reduce the Big O of an implemented algorithm.
-Psudocode:
-- greed algorithm (array)
-  - var largest difference = 0
-  - var new difference = find next difference (array[n], array[n+1])
-  - largest difference =  new difference if is > largest difference
-  - repeat above two steps until all differences have bee found
-  - return largest difference
-
-*/
