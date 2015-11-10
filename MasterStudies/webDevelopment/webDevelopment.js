@@ -4,37 +4,139 @@
     this.stuff = stuff;
     this.frameworks = frameworks;
     this.npm = npm;
+    this.angularJS = angularJS;
+    this.node = node;
+    this.express = express;
   });
   var stuff = [
     {
+      title: "Document-Object-Model (DOM)",
+      content: "DOM is a convention for representing and interlacing with objects I HTML, XHTML, and XML documents. The nodes of every document are organized in a tree structure called a DOM tree. Objects in the DOM tree ma be addressed and	manipulated by using methods on the objects."
+    },
+    {
+      title: "Model-View-Controller (MVC)",
+      content: "A software architecture pattern for implementing user interfaces."
+    },
+    {
+      title: "Controller (MVC)",
+      content: " Manipulates model.Sends commands to the model to update the model's state and sends commands to the view's presentation of the model. "
+    },
+    {
+      title: "Model (MVC)",
+      content: "Stores data that is retrieved by the controller and displayed by the view."
+    },
+    {
+      title: "View (MVC)",
+      content: "Requests information from the model that then generates an output representation."
     },
   ];
   var frameworks = [
     {
+      title: "Rails",
+      descriptions: [
+        "Web application framework that uses the MVC architecture and provides default structures for a database, web service, and web pages.",
+        "Encourages: XML, JSON, HTML, CSS, ECMAScript.",
+        "Emphasizes: Convention-over-Configuration, DRY, Active Record Pattern."
+      ]
     },
   ];
   var npm = [
     {
+      title: "Initialize",
+      contents: [
+        "package.json : controlls dependencies",
+        "'npm init --scope=<username>' : utility to define the package.json with the specified users access."
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+  ];
+  var angularJS = [
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+  ];
+  var node = [
+    {
+      title: "",
+      contents: [
+        "",
+      ]
+    },
+  ];
+  var express = [
+    {
+      title: "",
+      contents: [
+        "",
+      ]
     },
   ];
 })();
 /*
-  Architectures:
-- Document-Object-Model (DOM):
-- DOM is a convention for representing and interlacing with objects I HTML, 			XHTML, and XML documents. The nodes of every document are organized in a 			tree structure called a DOM tree. Objects in the DOM tree ma be addressed and 		manipulated by using methods on the objects.
-- Model-View-Controller (MVC):
-- A software architecture pattern for implementing user interfaces
-- User: SEES view, USES controller
-- Controller: Manipulates model
-- Mode: Updates view
-- Model: Stores data that is retrieved by the controller and displayed by the view
-- View: Requests information from the model that then generates an output 				representation
-- Controller: Sends commands to the model to update the model's state and 				sends commands to the view's presentation of the model.
+
 Web Development:
-    - Rails (Ruby):
-      - Web application framework that uses the MVC architecture and 						provides default structures for a database, web service, and 					web pages.
-      - Encourages: XML, JSON, HTML, CSS, ECMAScript
-      - Emphasizes: Convention-over-Configuration, DRY, Active 					Record Pattern
     - jQuery (ECMAScript):
       - A cross-platform ECMAScript library designed to simplify client-					side scripting with HTML. It is the most popular JavaScript library 					in use and was designed for DOM element selection, animation, 					events, and applications with AJAX.
     - Asynchronous JavaScript and XML (AJAX):

@@ -2,6 +2,7 @@
   - by Michael Sharp
   - msharp.oh@gmail.com
   - www.softwareontheshore.com */
+  
 function euclidsDivisor(a, b) {
   var remainder = a % b;
 

@@ -1,34 +1,40 @@
+
 <html ng-app="studyGuide">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <script type="text/javascript" src="webDevelopment.js"></script>
     <link rel="stylesheet" type="text/css" href="../section-style.css"/>
-
     <title>Web Development | Self-Learning Study Guide</title>
   </head>
-
   <body>
-    <div id="title">
-      <h1>Web Development</h2>
-      <p><a href="../masterStudyGuide.html">Home</a></p>
+    <div id="title"> 
+      <h1>Web Development</h1><a href="../masterStudyGuide.html">Home</a><br/><em><a href="#frameworks">Frameworks</a></em><br/><em><a href="#npm">npm</a></em>
     </div>
     <div id="body" ng-controller="StudyController as study" class="container">
+      <h2>General</h2>
       <ul class="list-group">
-        <li class="list-group-item" ng-repeat="section in study.sections | orderBy:'title'">
-          <h3><b>{{section.title}}</b></h3>
-          <b>Uses:</b>
-          <p ng-repeat="use in section.uses">- {{use}}</p>
-          <b>Advantages:</b>
-          <p ng-repeat="advantage in section.advantages">- {{advantage}}</p>
-          <b>Disadvantages:</b>
-          <p ng-repeat="disadvantage in section.disadvantages">- {{disadvantage}} </p>
-          <b>Examples:</b>
-          <p ng-repeat="example in section.examples">- {{example}} </p>
+        <li ng-repeat="thing in study.stuff | orderBy: 'title'" class="list-group-item">
+          <h3> <b>{{thing.title}}</b></h3><b>Description: </b>
+          <p>- {{thing.content}}</p>
         </li>
       </ul>
-    </body>
+      <h2 id="frameworks">Frameworks</h2>
+      <ul class="list-group">
+        <li ng-repeat="frame in study.frameworks | orderBy: 'title'" class="list-group-item">
+          <h3><b>{{frame.title}}</b></h3><b>Descriptions: </b>
+          <p ng-repeat="content in frame.description">- {{content}}</p>
+        </li>
+      </ul>
+      <h2 id="npm">npm</h2>
+      <p>npm is a public registry for dependency package/module management. Generally used in connection with Node.js</p>
+      <ul class="list-group">
+        <li ng-repeat="npm in study.npm | orderBy: 'title'" class="list-group-item">
+          <h3><b>{{npm.title}}</b></h3><b>Descriptions: </b>
+          <p ng-repeat="content in npm.contents">- {{content}}</p>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
