@@ -29,6 +29,14 @@
       title: "View (MVC)",
       content: "Requests information from the model that then generates an output representation."
     },
+    {
+      title: "jQuery (Library)",
+      content: "A cross-platform ECMAScript library designed to simplify client-side scripting with HTML. It is the most popular JavaScript library in use and was designed for DOM element selection, animation, events, and applications with AJAX."
+    },
+    {
+      title: "Asynchronous JavaScript and XML (AJAX)",
+      content: "AJAX is a group of interrelated web development techniques 	used on  the client-side to create applications that can send data to and retrieve data from a server in the background asynchronously, without disturbing the behavior of the existing page. Consists of CSS, HTML, XML, JSON, JavaScript, XMLHTTPRequest."
+    },
   ];
   var frameworks = [
     {
@@ -136,12 +144,7 @@
 })();
 /*
 
-Web Development:
-    - jQuery (ECMAScript):
-      - A cross-platform ECMAScript library designed to simplify client-					side scripting with HTML. It is the most popular JavaScript library 					in use and was designed for DOM element selection, animation, 					events, and applications with AJAX.
-    - Asynchronous JavaScript and XML (AJAX):
-      - AJAX is a group of interrelated web development techniques 					used on  the client-side to create applications that can send data to 				and retrieve data from a server in the background asynchronously, 				without disturbing the behavior of the existing page.
-      - Consists of CSS, HTML, XML, JSON, JavaScript, 							XMLHTTPRequest
+
       JavaScript (ECMAScript):
             - Dynamic programming language which is primarily used by web pages 				to implement client-side scripts in order to interact with a user. 					ECMAScript's engine is placed in the user's browser and allows 					applications to be run client-side. The syntax and structure is similar to 				Java
             - Strengths:
@@ -158,8 +161,8 @@ Web Development:
                   - jQuery:
                   - AngularJS:
                   - FontAwesome:
-                AngularJS:
-                -AngularJS is a web development framework that allows a programmer to easily implement MVC and responsive principles, as well as additional extensive behavior, testing, and HTML readability
+        AngularJS:
+                -
                 - Modules:
                   - where Angular application behavior lies
                     - ex: var app = angular.module(“store”, []);

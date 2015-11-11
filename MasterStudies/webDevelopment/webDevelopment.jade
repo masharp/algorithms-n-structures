@@ -18,6 +18,9 @@ html(ng-app="studyGuide")
       br
       em
         a(href="#npm") npm
+      br
+      em
+        a(href="#angular") AngularJS
     #body.container(ng-controller="StudyController as study")
       h2 General
       ul.list-group
@@ -32,13 +35,24 @@ html(ng-app="studyGuide")
           h3
             b {{frame.title}}
           b Descriptions: 
-          p(ng-repeat="content in frame.description") - {{content}}
+          p(ng-repeat="content in frame.descriptions") - {{content}}
       h2#npm npm
-      p npm is a public registry for dependency package/module management. Generally used in connection with Node.js
+      p.section-header npm is a public registry for dependency package/module management. Generally used in connection with Node.js.
       ul.list-group
         li.list-group-item(ng-repeat="npm in study.npm | orderBy: 'title'")
           h3
             b {{npm.title}}
           b Descriptions: 
           p(ng-repeat="content in npm.contents") - {{content}}
+      h2#angular AngularJS
+      p.section-header AngularJS is a web development framework that allows a programmer to easily implement MVC and responsive principles, as well as additional extensive behavior, testing, and HTML readability.
+      ul.list-group
+        li.list-group-item(ng-repeat="angular in study.angularJS | orderBy: 'title'")
+          h3
+            b {{angular.title}}
+          b Descriptions: 
+          p(ng-repeat="content in angular.contents") - {{content}}
+          
+          
+          
           

@@ -19,5 +19,7 @@ body, html {
     margin: 10px; }
   #body h3 {
     font-size: 1.5em; }
+  #body .section-header {
+    text-align: center; }
 
 /*# sourceMappingURL=section-style.css.map */
