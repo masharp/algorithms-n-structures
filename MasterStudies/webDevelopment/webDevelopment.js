@@ -57,33 +57,40 @@
       ]
     },
     {
-      title: "",
+      title: "Modules",
       contents: [
-        "",
+        "Unpacks a module dependency found at 'registry.nodejs.com' and put into node_modules",
+        "'npm install <module_name>'"
       ]
     },
     {
-      title: "",
+      title: "Dependencies",
       contents: [
-        "",
+        "List dependencies/modules installed with this package.",
+        "'npm ls'",
+        "Declare something a dependency automatically by adding the '--save' flag at installation. Not ideal when trying something out."
       ]
     },
     {
-      title: "",
+      title: "Tests",
       contents: [
-        "",
+        "Found in the package.json under 'scripts.test'. These are included with a package to test it is functioning acurately.",
       ]
     },
     {
-      title: "",
+      title: "Publish",
       contents: [
-        "",
+        "Puts your package onto the npm.js registry for the public to see.",
+        "'npm publish'"
       ]
     },
     {
-      title: "",
+      title: "Versioning",
       contents: [
-        "",
+        "Follows the SemVer standard (Semantic Version)",
+        "v1.2.3 = 1) Major Version - Update for breaking API changes. 2) Minor Changes - Update for API additions. 3) Patch Version - Update for every change.",
+        "'npm version'",
+        "Updates your package.json and the git repo associated with it +1 patch version."
       ]
     },
     {
@@ -119,19 +126,65 @@
   ];
   var angularJS = [
     {
-      title: "",
+      title: "Modules",
       contents: [
-        "",
+        "Where Angular application behavior lies.",
+        "  ex: var app = angular.module(“store”, []);",
+      ]
+    },
+    {
+      title: "Controllers",
+      contents: [
+        "Where we add application behavioral.",
+        "JS: app.controller('StoreController', function() --- HTML: <ng-controller='StoreController as store'>"
+      ]
+    },
+    {
+      title: "Expressions",
+      contents: [
+        "How JavaScript values are displayed on the page.",
+        "  ex: {{product.price}}",
+      ]
+    },
+    {
+      title: "Directives",
+      contents: [
+        "HTML Annotations that trigger JavaScript behaviors.",
+        "   ngShow / ngHide: displays or hides a DOM element.",
+        "   ngApp: attach a module to a page.",
+        "   ngController: attach a controller function to the page.",
+        "   ngRepeat: repeat a section for each item in an array (can be filtered).",
+        "  ngSrc: reslves Angular image source resolution.",
+        "  ngClick: specify custom behavior when element is clicked.",
+        "  ngClass: dynamically set CSS elements to HTML element.",
+        "  ngModel: binds inputs to a property scope (live update)."
+      ]
+    },
+    {
+      title: "Filters",
+      contents: [
+        "an expression that mutates data passed to it.",
+        "  ex: {{product.price | currency}}",
+        "currency: adds the local currency symbol and specifies decimals.",
+        "date: formats the input to a date format.",
+        "uppercase / lowercase: changes input data case.",
+        "limitTo: limits the display to specified character lengths.",
+        "orderBy: orders a list by a parameter (- sign for descending)."
+      ]
+    },
+    {
+      title: "Services",
+      contents: [
+        "Angular methods that provide built in functionality.",
+        "$log: prints contents out to console.",
+        "$http: makes a web service request. Automatically converts to JS arr/obj.",
+        "  ex: $http.get('url').success(callback function());",
+        "$filter: filters an array."
       ]
     },
   ];
   var node = [
-    {
-      title: "",
-      contents: [
-        "",
-      ]
-    },
+
   ];
   var express = [
     {
@@ -161,44 +214,4 @@
                   - jQuery:
                   - AngularJS:
                   - FontAwesome:
-        AngularJS:
-                -
-                - Modules:
-                  - where Angular application behavior lies
-                    - ex: var app = angular.module(“store”, []);
-                - Controllers:
-                  - where we add application behavioral
-                    - ex:
-                      JS: app.controller(“StoreController”, function() {
-                        ...
-                        });
-                      html: <ng-controller=”StoreController as store”>
-                Expressions:
-                  - How JavaScript values are displayed on the page
-                    - ex: {{product.price}}
-                - Directives:
-                  - HTML Annotations that trigger JavaScript behaviors
-                    - ngShow / ngHide: displays or hides a DOM element
-                    - ngApp: attach a module to a page
-                    - ngController: attach a controller function to the page
-                    - ngRepeat: repeat a section for each item in an array (can be filtered)
-                    - ngSrc: reslves Angular image source resolution
-                    -ngClass: dynamically set CSS elements to HTML element
-                    -ngClick: specify custom behavior when element is clicked
-                    -ngModel: binds inputs to a property scope (live update)
-                - Filters:
-                  - an expression that mutates data passed to it
-                      -ex: {{product.price | currency}}
-                      -ex: {{recipe.data | filter:option}}
-                    - currency: adds the local currency symbol and specifies decimals
-                    - date: formats the input to a date format
-                    -uppercase / lowercase: changes input data case
-                    - limitTo: limits the display to specified character lengths
-                    - orderBy: orders a list by a parameter (- sign for descending)
-                - Services
-                  - Angular methods that provide built in functionality
-                    - $log: prints contents out to console
-                    -$http: makes a web service request. Automatically converts to JS arr/obj
-                      - ex: $http.get('url').success(callback function());
-                    -$filter: filters an array
 */
