@@ -1,7 +1,8 @@
 /* A series of JavaScript methods for finding the symmetricalDifference in two arrays at a time, out of
   many possible called arguments. Also removes duplicates in individual arrays.
+
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com */
 
 function symmetricalDifference() {

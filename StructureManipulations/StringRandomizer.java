@@ -1,6 +1,6 @@
 /* A method for taking that generates a random string of defined length based on a string of parameters
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com */
 
 

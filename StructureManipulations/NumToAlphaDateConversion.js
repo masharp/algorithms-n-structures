@@ -2,7 +2,7 @@
   date range entry, based on certain inferrence.
   (ie,['2015-07-01', '2016-02-23'] ---> ["July 1st, 2015", "February 23rd, 2016"])
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com */
 
 function dateRangeConverter(str) {

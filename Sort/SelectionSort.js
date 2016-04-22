@@ -1,8 +1,8 @@
 /* This is a Selection Sort sorting algorithm that compares each element in the array to the rest of the array in search
   of a smaller element. If found, the algorithm swaps the smaller element's position with the larger element's position.
-  
+
   - by Michael Sharp
-  - msharp.oh@gmail.com
+  - michael@softwareontheshore.com
   - www.softwareontheshore.com */
 
   var numArray = [12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663, 99, 46, 2, 124, 18, 22,

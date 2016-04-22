@@ -4,7 +4,7 @@
   index until an element less than or equal to the value is found. The value is then inserted there.
 
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com
     ------------------------------------
 

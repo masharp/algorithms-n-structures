@@ -1,6 +1,6 @@
 /* LinkedList implementation with associated useful algorithms
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com */
 
 public class Node {

@@ -1,6 +1,6 @@
 /* An AVL tree implementation with insert and balance methods
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com */
 
 // ----------------- IN PROGRESS ----------------------------

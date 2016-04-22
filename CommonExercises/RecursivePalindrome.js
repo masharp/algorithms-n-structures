@@ -3,7 +3,7 @@
 
     by Michael Sharp
     www.softwareontheshore.com
-    msharp.oh@gmail.com
+    michael@softwareontheshore.com
     ---------------------------------
     Psudocode:
       - if string is empty or 1 character

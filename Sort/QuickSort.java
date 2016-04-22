@@ -3,7 +3,7 @@
  of the array.
 
   - by Michael Sharp
-  - msharp.oh@gmail.com
+  - michael@softwareontheshore.com
   - www.softwareontheshore.com
 
 ------------------------------------------

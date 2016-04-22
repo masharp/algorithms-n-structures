@@ -1,6 +1,6 @@
 /* Tree implementation with associated useful algorithms
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com */
 
 public class Node {
@@ -60,7 +60,7 @@ public Node insertNode(Node root,int value) {
         temp.left = null;
         temp.right = null;
         temp.data = value;
-        
+
         return temp;
     }
     if (Integer.compare(value, root.data) == 0) {

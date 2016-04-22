@@ -1,7 +1,7 @@
 /* This is a Bubble Sort sorting algorithm that compares each element in pairs of adjacent elements.
   The below array of 20 unsorted elements are sorted in -90- iterations.
   - by Michael Sharp
-  - msharp.oh@gmail.com
+  - michael@softwareontheshore.com
   - www.softwareontheshore.com */
 
 var numArray = [12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663, 99, 46, 2, 124, 18, 22];

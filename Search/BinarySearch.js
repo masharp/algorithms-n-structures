@@ -2,7 +2,7 @@
 unit narrowed to just one. Returns the index of the item or -1 if not found.
 The below list of 40 is iterated through 3 times to find the static target.
   - by Michael Sharp
-  - msharp.oh@gmail.com
+  - michael@softwareontheshore.com
   - www.softwareontheshore.com */
 
 var numArray = [12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663, 99, 46, 2, 124, 18, 22,

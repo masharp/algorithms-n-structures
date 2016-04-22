@@ -4,7 +4,7 @@
 
     by Michael Sharp
     www.softwareontheshore.com
-    msharp.oh@gmail.com
+    michael@softwareontheshore.com
     ---------------------------------
 
 */

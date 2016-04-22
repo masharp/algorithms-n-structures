@@ -1,8 +1,8 @@
 /* This algorithm implements Euclid's Algorithm to find the greatest common divisor of two integers.
   - by Michael Sharp
-  - msharp.oh@gmail.com
+  - michael@softwareontheshore.com
   - www.softwareontheshore.com */
-  
+
 function euclidsDivisor(a, b) {
   var remainder = a % b;
 

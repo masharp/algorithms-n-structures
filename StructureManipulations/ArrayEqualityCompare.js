@@ -1,6 +1,6 @@
 /* A simple function that compares two arrays for equality, regardless of order.
     - by Michael Sharp
-    - msharp.oh@gmail.com
+    - michael@softwareontheshore.com
     - www.softwareontheshore.com */
 
 function checkArrayEquality(arrayA, arrayB) {
