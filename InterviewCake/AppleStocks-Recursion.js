@@ -13,9 +13,23 @@
  * 2016 Michael Sharp
  * michael@softwareontheshore.com
  */
+ 'use strict';
+
+ /* describe our test */
+describe('AppleStocks Recursion Tests', () => {
+ const yesterdaysStocks = [23, 2, 11, 6, 23, 55, 45, 2, 23, 511, 232, 236, 2, 4, 123, 912, 99, 21, 21, 56];
+ const profit = maximizeProfit(yesterdaysStocks);
+
+ it('Should return a Number', (done) => {
+   expect(profit).toEqual(jasmine.any(Number));
+ });
+ it('Should return proper answer', (done) => {
+   expect(profit).toEqual(910);
+ });
+});
 
 // test values array - great profit: 910 (purcase at 2, sell at 912)
-var yesterdaysStocks = [23, 2, 11, 6, 23, 55, 45, 2, 23, 511, 232, 236, 2, 4, 123, 912, 99, 21, 21, 56];
+const yesterdaysStocks = [23, 2, 11, 6, 23, 55, 45, 2, 23, 511, 232, 236, 2, 4, 123, 912, 99, 21, 21, 56];
 
 /**
  * Iterative function that peeks ahead and checks the maximum profit
@@ -25,11 +39,11 @@ var yesterdaysStocks = [23, 2, 11, 6, 23, 55, 45, 2, 23, 511, 232, 236, 2, 4, 12
  * @return {int} - highest profit available with purchase
  */
 function getProfitMargin(purchase, values) {
-  var profit = null;
+  let profit = null;
 
-  values.forEach(function(v) {
-    var transaction = v - purchase;
-    if(transaction > profit || profit === null) profit = transaction;
+  values.forEach((v) => {
+    let transaction = v - purchase;
+    if (transaction > profit || profit === null) profit = transaction;
   });
 
   return profit;
@@ -43,20 +57,20 @@ function getProfitMargin(purchase, values) {
  * @return {int} - highest possible profit for that day
  */
 function maximizeStock(stocks, tracker) {
-  var maximizedProfit = tracker || null;
+  let maximizedProfit = tracker || null;
   // console.time('Stock Parse Time');
 
   // base case - empty array
-  if(stocks.length <=  1) {
+  if (stocks.length <=  1) {
     // console.timeEnd('Stock Parse Time');
     return maximizedProfit;
   }
 
-  var currentPrice = stocks[0]; // take the next tick price
-  var currentProfit = getProfitMargin(currentPrice, stocks.slice(1)); // check the profit at that price
-  if(maximizedProfit < currentProfit || maximizedProfit === null) maximizedProfit = currentProfit; // assign profit if larger
+  const currentPrice = stocks[0]; // take the next tick price
+  const currentProfit = getProfitMargin(currentPrice, stocks.slice(1)); // check the profit at that price
+  if (maximizedProfit < currentProfit || maximizedProfit === null) maximizedProfit = currentProfit; // assign profit if larger
 
   return maximizeStock(stocks.slice(1), maximizedProfit); // recurse through the rest of the ticks remaining
 }
 
-console.log(`Maximum Profit for the Day: ${maximizeStock(yesterdaysStocks)}`);
+maximizeStock(yesterdaysStocks);

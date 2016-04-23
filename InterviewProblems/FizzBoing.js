@@ -7,7 +7,7 @@
 
 'use strict';
 
-/* describe out test */
+/* describe our test */
 describe('BingBoing Tests', () => {
   const bingBoing = bingBoing();
 
