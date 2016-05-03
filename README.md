@@ -1,8 +1,9 @@
-#useful-algorithms
+#useful-algorithms & algorithm-challenges
 Algorithms and data structures written by me to solve simple to complex problems.
-Some are written in Java, some in JavaScript. Some need polish, some are hacked together.
+Some are written in Java, some in JavaScript. Some need polish, some are hacked together.  
+
 My intention with this repo is to track my own progress, save solutions to problems
-for future use, and to potentially help others along the way.
+for future use, and to potentially help others along the way. A lot of these solutions
 
 2016 Michael Sharp
 michael@softwareontheshore.com
