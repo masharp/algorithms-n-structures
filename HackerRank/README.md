@@ -5,7 +5,7 @@ a time analysis.
 
 My profile can be found at: [HackerRank @msharp_oh](https://www.hackerrank.com/msharp_oh).  
 
-2016 Michael Sharp
-michael@softwareontheshore.com
-(Software on the Shore)[http://www.softwareontheshore.com]
-[@sharp_mi](https://twitter.com/sharp_mi)
+2016 Michael Sharp  
+michael@softwareontheshore.com  
+[Software on the Shore](http://www.softwareontheshore.com)  
+[@sharp_mi](https://twitter.com/sharp_mi)  
