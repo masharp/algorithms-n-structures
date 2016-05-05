@@ -4,6 +4,8 @@
  * https://www.hackerrank.com/challenges/new-year-chaos
  *
  * michael@softwareontheshore.com
+ *
+ * Currently Passes 6 / 10 Test Cases - the rest time out
  """
 
 testA = [ 2, 1, 5, 3, 4 ];
