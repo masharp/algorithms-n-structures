@@ -1,4 +1,4 @@
-/*  This is an implementation of a recursive algorithm designed to dertimine if a string is a palindrome.
+/*  This is an implementation of a recursive algorithm designed to determine if a string is a palindrome.
     A paldinrome is a string that reads the same forward as it does backward.
 
     by Michael Sharp
