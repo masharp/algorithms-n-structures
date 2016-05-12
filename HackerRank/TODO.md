@@ -7,3 +7,5 @@
       - Rotate Matrix (Python: 0 / 10)
     ####Strings
       - Palindrome Index (Python: 6 / 13, JavaScript: 6 / 13 || Hackeros Spent: Test 5)
+    ####Greedy
+      - MaxMin (Python: 9/17 RuntimeError)
