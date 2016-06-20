@@ -19,48 +19,33 @@
           element + 1 = element
           element = newValue
 */
-(function() {
+'use strict';
 
+const numArray = [ 12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663,
+                  99, 46, 2, 124, 18, 22, 144, 1235, 29772, 1912873, -19, 928282,
+                  4759302, 0, 2938, 21, 222, 98, 1293, 8483, 988, -9, 8888, -22,
+                  999999, 22222 ];
 
-  var numArray = [];
-  var sortedArray = [];
+function insertionSort(array) {
+  const a = array;
+  const len = a.length;
 
-  //populate test array
-  for(var i = 0; i < 250; i++) {
-    numArray.push(Math.round(Math.random() * 100));
-  }
-  console.log(numArray);
+  /* cycle through each item in unsorted array */
+  for (let i = 0; i < len; i++) {
+    const current = a[i];
 
-
-  //sort test array
-  while(numArray.length > 0) {
-    var newValue = numArray.pop();
-
-    sortedArray.push(newValue);
-    sortedArray = insertionSort(sortedArray);
-  }
-
-  console.log(sortedArray);
-
-  function insertionSort(array) {
-    var unsortedValue = array[array.length - 1];
-
-    for(var i = array.length - 2; i >= 0; i--) {
-      if(array[i] >= unsortedValue) {
-        array[i + 1] = array[i];
-
-      }
-      if(array[i] < unsortedValue) {
-        array[i + 1] = unsortedValue;
-        break;
-
-      }
-      if(i == 0) {
-        array[i + 1] = array[i];
-        array[i] = unsortedValue;
-
-      }
+    /* check the rest of the unsorted array for a larger number. if found - shift
+     NOTE: must use var declaration here to insert j into function namespace */
+    for (var j = i - 1; j >= 0 && a[j] > current; j--) {
+      a[j + 1] = a[j];
     }
-    return array;
+
+    /* insert copied value into correct position */
+    a[j + 1] = current;
   }
-})();
+
+  return a;
+}
+
+const sorted = insertionSort(numArray);
+console.log(sorted);
