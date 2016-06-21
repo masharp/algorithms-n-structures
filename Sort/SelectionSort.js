@@ -21,7 +21,7 @@ function selectionSort(array) {
   for (let i = 0; i < len; i++) {
     let min = i;
 
-    /* select on and then compare to rest of the unsorted array */
+    /* select one and then compare to rest of the unsorted array */
     for (let j = i + 1; j < len; j++) {
       if (a[j] < a[min]) min = j; // assign min to lesser value if found
     }

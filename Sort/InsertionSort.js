@@ -1,7 +1,6 @@
-/* This is an implementation of Insertion Sort. Each element of an unsorted array is added to a sorted array.
-  The 'sorted array' is then sorted with Insertion Sort. During this step, the last element, which is
-  unsorted, is then sorted. The algorithm shifts elements larger than the unsorted value to the right one
-  index until an element less than or equal to the value is found. The value is then inserted there.
+/* This is an implementation of Insertion Sort. Takes each value and compares it
+  to subsequent values. If a greater value is found, shifts to the right and inserts
+  unsorted element there.
 
     - by Michael Sharp
     - michael@softwareontheshore.com
