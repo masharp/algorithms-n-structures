@@ -9,9 +9,10 @@
 /* function that checks if a number is prime by calculating the remainder of division
  * from 2 to the numbers square root */
 function checkPrime(n) {
-  var rt = Math.sqrt(n) | 0; // sqrt saves us from checking all ints up to n
+  if (n % 2 === 0) return false;
+  var root = Math.sqrt(n) | 0; // sqrt saves us from checking all ints up to n
 
-  for (var i = 2; i <= rt; i++) {
+  for (var i = 2; i <= root; i++) {
     if (n % i === 0) return false; // if divides evenly, not a prime number
   }
 

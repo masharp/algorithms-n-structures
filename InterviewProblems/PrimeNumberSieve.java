@@ -18,24 +18,24 @@ public class PrimeNumberSieve {
       n = in.nextLong();
       Integer length = (int)(long) n;
 
-      //initializes a bool array to sieve through the prime numbers in the range
+      // initializes a bool array to sieve through the prime numbers in the range
       boolean[] primeArray = new boolean[length + 1];
 
-      //begins the array with all true
+      // begins the array with all true
       for (int i = 0; i <= n; i++) {
           primeArray[i] = true;
       }
 
-      //sieve through the array and mark the non-primes
-      for (int i = 2; i*i <= n; i++) {
+      // sieve through the array and mark the non-primes
+      for (int i = 2; i * i <= n;  i++) {
           if (primeArray[i]) {
-              for (int j = i; i*j <= n; j++) {
-                  primeArray[i*j] = false;
+              for (int j = i; i * j <= n; j++) {
+                  primeArray[i * j] = false;
               }
           }
       }
 
-      //whatever is still true in the array is prime and output
+      // whatever is still true in the array is prime and output
       for (int i = 1; i <= n; i++) {
           if (primeArray[i]) System.out.println(i);
       }

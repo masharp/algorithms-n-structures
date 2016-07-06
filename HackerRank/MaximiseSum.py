@@ -18,5 +18,3 @@ def maximiseSum(mod, array):
 
 testAB = map(int, testAB.split(' '))
 result = maximiseSum(testAA, testAB)
-
-#https://www.quora.com/What-is-the-logic-used-in-the-HackerRank-Maximise-Sum-problem
