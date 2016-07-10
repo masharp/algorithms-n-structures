@@ -1,32 +1,37 @@
-/* This is a Bubble Sort sorting algorithm that compares each element in pairs of adjacent elements.
-  The below array of 20 unsorted elements are sorted in -90- iterations.
+/* This is a Bubble Sort sorting algorithm that compares each element in pairs
+   of adjacent elements.
+
   - by Michael Sharp
   - michael@softwareontheshore.com
-  - www.softwareontheshore.com */
+  - www.softwareontheshore.com
+*/
 
-var numArray = [12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663, 99, 46, 2, 124, 18, 22];
-var arrayLength = numArray.length;
-var iterations = 0;
+'use strict';
 
-bubbleSort(numArray, arrayLength);
+const numArray = [ 12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663,
+                  99, 46, 2, 124, 18, 22, 144, 1235, 29772, 1912873, -19, 928282,
+                  4759302, 0, 2938, 21, 222, 98, 1293, 8483, 988, -9, 8888, -22,
+                  999999, 22222 ];
 
+function bubbleSort(array) {
+  const a = array;
+  const length = array.length;
 
-for (var i = 0; i < arrayLength; i++) {
-  console.log(numArray[i]);
-}
-console.log(iterations + " " + arrayLength);
+  for (let i = 0; i < length - 1; i++) {
 
-//-----------------------------------------
-function bubbleSort(array, length) {
-  var temp;
-  for (var i = 0; i < length - 1; i++) {
-    for (var j = 1; j < length; j++) {
-      if (array[j] < array[j-1]) { //compare each pair in the array and moves the largest farther to the right
-        temp = array[j];
-        array[j] = array[j-1];
-        array[j-1] = temp;
-        iterations++;
+    for (let j = 1; j < length; j++) {
+      let temp = null;
+
+      /* compare each pair in the array and swaps places to the right if larger */
+      if (a[j] < a[j - 1]) {
+        temp = a[j];
+        a[j] = a[j - 1];
+        a[j - 1 ] = temp;
       }
     }
   }
+
+  return a;
 }
+
+console.log(bubbleSort(numArray));

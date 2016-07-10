@@ -1,104 +1,52 @@
-/* This is a Merge Sort sorting algorithm that divides itself in half and calls itself until sorted and then merges
-  the two halves into a single sorted array;
+/* This is a Merge Sort sorting algorithm that divides itself in half and calls itself
+  until sorted and then merges the two halves into a single sorted array. Sorts in
+  ascending order.
 
   - by Michael Sharp
   - michael@softwareontheshore.com
   - www.softwareontheshore.com
 
-  ----------------------------
-  Psudocode:
-    -   mergeSort
-      if p < r
-        then q = floor(p + r / 2)
-          mergeSort(A, p, q)
-          mergeSort(A, q+1, r)
-          merge(A[p..q], A[q+1..r])
+  Inspired by:
+    - Stoiman
+    - http://www.stoimen.com/blog/2010/07/02/friday-algorithms-javascript-merge-sort/
+*/
 
-    - merge
-         while left.length > 0 && right.length > 0
-            if left < right
-              result.push(left)
-              left++
-            else
-              result.push(right)
-              right++
-          if left.length > 0
-            result.push(left)
-          if right.length > 0
-            result.push(right)
-          return result
-  */
+'use strict';
 
-  (function() {
+const numArray = [ 12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663,
+                  99, 46, 2, 124, 18, 22, 144, 1235, 29772, 1912873, -19, 928282,
+                  4759302, 0, 2938, 21, 222, 98, 1293, 8483, 988, -9, 8888, -22,
+                  999999, 22222 ];
 
-    //populate test array
-    var numArray = [];
-    for(var i = 0; i < 25; i++) {
-      numArray.push(Math.round(Math.random() * 100));
-    }
-    console.log(numArray);
+/**
+  merge function that takes the left and right and sorts it into a single array.
+  uses array.shift() to whittle away at each array until empty (merged)
+*/
+function merge(left, right) {
+  const result = [];
 
-    var left = 0;
-    var right = numArray.length - 1;
+  /* merge the two arrays by sorting and whittling */
+  while (left.length && right.length) {
+    if (left[0] <= right[0]) { result.push(left.shift()); }
+    else { result.push(right.shift()); }
+  }
 
-    //sort test array
-    var result = mergeSort(numArray, left, right);
-    console.log(result);
+  /* handle whatever is left in the arrays */
+  while (left.length) { result.push(left.shift()); }
+  while (right.length) { result.push(right.shift()); }
 
-    /*
-    mergeSort Function
-    -----------------
-      - This function takes the middle element of the array and then divides the
-        passed array into two smaller arrays and recursively performs mergeSort.
-        The two smaller arrays are then passed to a merge function that sorts and
-        combines them into a single sorted array.
+  return result;
+}
 
-        @param [array]: array to be sorted
-        @return: merged single sorted array
-    */
-    function mergeSort(array) {
-      if(array.length < 2) {
-        return array;
-      }
-        var middle = Math.floor(array.length / 2);
-        var left = array.split(0, middle);
-        var right = array.split(middle);
+/* Main function that handles division and is recursively called */
+function mergeSort(array) {
+  if (array.length < 2) return array; // if array has less than 2 elements, is sorted
 
-        return merge(mergeSort(left), mergeSort(right));
-    }
-    /*
-    merge Function
-    -----------------
-      - This function sorts the two arrays by combining the smaller array with the larger
-        to produce a single sorted array
+  const pivot = array.length / 2 | 0; // bitwise comparison as a quick math.floor
+  const left = array.slice(0, pivot);
+  const right = array.slice(pivot, array.length);
 
-        @param [leftArray]: left half of the original unsorted array
-        @param [rightArray]; right half of the original unsorted array
-        @return: a combined sorted array
-    */
-    function merge(leftArray, rightArray) {
-      var result = [];
-      var i = 0;
-      var j = 0;
+  return merge(mergeSort(left), mergeSort(right));
+}
 
-      while(i < leftArray.length && j < rightArray.length) {
-        if(leftArray[i] < rightArray[j]) {
-          result.push(leftArray[i]);
-          i++;
-        } else {
-          result.push(rightArray[j]);
-          j++;
-        }
-      }
-
-      while(i < leftArray.length) {
-        result.push(leftArray[i]);
-        i++;
-      }
-      while(j < rightArray.length) {
-        result.push(rightArray[j]);
-        j++;
-      }
-      return result;
-    }
-  })();
+console.log(mergeSort(numArray));

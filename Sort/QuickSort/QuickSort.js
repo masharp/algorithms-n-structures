@@ -1,11 +1,10 @@
-/* This is a Quicksort sorting algorithm that takes the rightmost element as the pivot and puts
- all smaller elements to the front of the pivot. This is repeated until sorted. Uses a Functional
- ES6 implementation
+/* This is a Quicksort sorting algorithm implemented with functional JavaScript
+and uses ES6 features. Recursively divides from the middle and filters each half
+until sorted.
 
   - by Michael Sharp
   - michael@softwareontheshore.com
   - www.softwareontheshore.com
-
 */
 
 'use strict';

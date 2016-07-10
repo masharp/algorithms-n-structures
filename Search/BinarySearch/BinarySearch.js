@@ -1,6 +1,5 @@
 /* This is a BinarySearch searching algorithm that divides in half the portion of the list that contains the item
 unit narrowed to just one. Returns the index of the item or -1 if not found.
-The below list of 40 is iterated through 3 times to find the static target.
 
   - by Michael Sharp
   - michael@softwareontheshore.com
