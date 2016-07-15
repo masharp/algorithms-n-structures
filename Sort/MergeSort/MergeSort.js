@@ -40,11 +40,12 @@ function merge(left, right) {
 
 /* Main function that handles division and is recursively called */
 function mergeSort(array) {
-  if (array.length < 2) return array; // if array has less than 2 elements, is sorted
+  const length = array.length;
+  if (length < 2) return array; // if array has less than 2 elements, is sorted
 
-  const pivot = array.length / 2 | 0; // bitwise comparison as a quick math.floor
+  const pivot = length / 2 | 0; // bitwise comparison as a quick math.floor
   const left = array.slice(0, pivot);
-  const right = array.slice(pivot, array.length);
+  const right = array.slice(pivot, length);
 
   return merge(mergeSort(left), mergeSort(right));
 }
