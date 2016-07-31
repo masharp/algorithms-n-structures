@@ -4,14 +4,15 @@
  * michael@softwareontheshore.com
  */
 
+
+function Node(num) {
+ this.num = num;
+ this.previous = null;
+}
+
 function Stack() {
   this.top = null;
   this.size = 0;
-}
-
-function Node(num) {
-  this.num = num;
-  this.previous = null;
 }
 
 Stack.prototype.push = function(num) {

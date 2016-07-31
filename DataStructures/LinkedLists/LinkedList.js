@@ -89,7 +89,7 @@ LinkedList.prototype.remove = function remove(position) {
   var previousNode = null;
   var deletedNode = null;
 
-  if (position < 0 || position > length) return -1;
+  if (position < 0 || position > length || length === 0) return -1;
 
   // handle the head being removed
   if (position === 0) {
@@ -116,11 +116,59 @@ LinkedList.prototype.remove = function remove(position) {
   return deletedNode;
 }
 
+/* prototype method that uses merge sort to sort the Linked
+ * List
+ */
+LinkedList.prototype.sort = function sort() {
+  function merge(left, right) {
+    var merged = new LinkedList();
+
+    while (left._length && right._length) {
+      if (left.find(0).data < right.find(0).data) merged.add(left.remove(0).data);
+      else merged.add(right.remove(0).data)
+    }
+
+    while (left._length) { merged.add(left.remove(0).data); }
+    while (right._length) { merged.add(right.remove(0).data); }
+
+    return merged;
+  }
+
+  var length = this._length;
+  if (length < 2) return this;
+
+  var current = this.head;
+  var left = new LinkedList();
+  var right = new LinkedList();
+
+  var pivot = length / 2 | 0;
+  var count = 0;
+
+  while (count < pivot) {
+    if (current) {
+      left.add(current.data);
+      current = current.next;
+    }
+
+    count++;
+  }
+
+  while (count < length) {
+    if (current) {
+      right.add(current.data);
+      current = current.next;
+    }
+
+    count++;
+  }
+
+  return merge(left.sort(), right.sort());
+}
+
 var list = new LinkedList()
 list.add(5);
-list.add(6);
 list.add(1233)
+list.add(6);
 list.add(123);
 
-list.remove(3);
-console.log(list)
+console.log(list.sort())
