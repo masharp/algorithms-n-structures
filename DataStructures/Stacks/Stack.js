@@ -33,3 +33,7 @@ Stack.prototype.pop = function() {
 
   return current.num;
 }
+
+Stack.prototype.peek = function() {
+  return this.top;
+}
