@@ -23,3 +23,4 @@ and sets.
  * [Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
  * [Cornell - CS312](http://www.cs.cornell.edu/courses/cs312/2008sp/lectures/lec20.html)
  * [Will Villanueva - JavaScript Hash Tables](http://www.willvillanueva.com/javascript-hash-tables/)
+ * [Interactive Python](http://interactivepython.org/runestone/static/pythonds/SortSearch/Hashing.html)
