@@ -2,7 +2,6 @@
  * A Binary Search Tree implemented from scratch in javaScript
  */
 
-
 function Leaf(value) {
   this.data = value;
   this.left = null;
