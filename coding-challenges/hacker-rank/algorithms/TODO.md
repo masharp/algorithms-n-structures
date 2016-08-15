@@ -3,11 +3,10 @@
     ####Implementations
       - New York Chaos (Python: 6 / 10 || Hackeros Spent: Test 4)
       - Grid Search (JavaScript: 9 / 16)
-      - Modified Kaprekar Numbers (Java: 6 / 7)
       - Rotate Matrix (Python: 0 / 10)
-      - Fair Rations (Java: 15 / 22)
+      - Strange Counter (JavaScript: 6/10, Time Out)
     ####Strings
       - Palindrome Index (Python: 6 / 13, JavaScript: 6 / 13 || Hackeros Spent: Test 5)
       - Sherlock and Valid strings (Python: 9/10)
     ####Greedy
-      - MaxMin (Python: 9/17 RuntimeError)
+      - MaxMin (Python: 9/17 Runtime Error)
