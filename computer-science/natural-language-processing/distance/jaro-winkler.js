@@ -14,12 +14,21 @@
 function jaroDistance(stringA, stringB) {
 	if (typeof stringA != 'string' || stringA.length == 0 || typeof stringB != 'string' || stringA.length == 0) { return 0; }
 
-	var matching = 0;
-	var transpositions = 0;
+	/* compute the range (i +- range) for a valid matching character. this means the character in
+	   stringA must be the same and no farther in the sequence of stringB
+	   than floor(max(lenA, lenB) / 2) - 1. These matches are transpositions.
+	*/
+	var lenA = stringA.length;
+	var lenB = stringB.length;
+	var maxLen = Math.max(lenA, lenB);
+	var minLen = Math.min(lenA, lenB);
+
+	var matchingRange = (Math.floor(maxLen / 2) - 1);
+	var matching = 0; // sequential character matches
+	var transpositions = 0; // non-sequential character matches within the matching range
 
 	stringA = stringA.toLowerCase();
 	stringB = stringB.toLowerCase();
-
 }
 
 /**
@@ -36,11 +45,18 @@ function jaroWinklerDistance(stringA, stringB) {
 		if (stringA == stringB) { return 1; }
 
 		var jDistance = jaroDistance(stringA, stringB);
-		
+
 		stringA = stringA.toLowerCase();
 		stringB = stringB.toLowerCase();
 
 }
+
+(function() {
+	var stringA = 'CREATE';
+	var stringB = 'CRATE';
+
+	jaroDistance(stringA, stringB);
+})()
 
 module.exports = jaroDistance;
 module.exports = jaroWinklerDistance;
