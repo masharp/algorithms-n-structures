@@ -21,14 +21,49 @@ function jaroDistance(stringA, stringB) {
 	var lenA = stringA.length;
 	var lenB = stringB.length;
 	var maxLen = Math.max(lenA, lenB);
-	var minLen = Math.min(lenA, lenB);
 
 	var matchingRange = (Math.floor(maxLen / 2) - 1);
 	var matching = 0; // sequential character matches
 	var transpositions = 0; // non-sequential character matches within the matching range
+	var jaro = 0;
 
 	stringA = stringA.toLowerCase();
 	stringB = stringB.toLowerCase();
+
+	if (stringA == stringB) { return 1; }
+
+	for (var x = 0; x < lenA; x++) {
+		var cA = stringA[x];
+		var cB = stringB[x];
+
+		if (cA == cB) { matching++; } // sequential character match
+		else {
+
+			/* check for transpositions within the ceiling range */
+			for (var i = x; i < i + matchingRange && i < lenB - 1; i++) {
+				var tCeil= stringB[i];
+
+				if (tCeil == cA) { transpositions++; }
+			}
+
+			/* check for transpositions within the floor range */
+			for (var j = x; j > j - matchingRange && j > -1; j--) {
+				var tFloor = stringB[j];
+
+				if (tFloor == cA) { transpositions++; }
+			}
+		}
+	}
+
+	//console.log(stringA, stringB);
+	//console.log('MATCHING RANGE: ' + matchingRange);
+	//console.log(matching, transpositions);
+
+	if (matching != 0) {
+		jaro =
+	}
+
+	return jaro;
 }
 
 /**
@@ -52,11 +87,11 @@ function jaroWinklerDistance(stringA, stringB) {
 }
 
 (function() {
-	var stringA = 'CREATE';
-	var stringB = 'CRATE';
+	var stringA = 'dixon';
+	var stringB = 'dicksonx';
 
 	jaroDistance(stringA, stringB);
-})()
+})();
 
 module.exports = jaroDistance;
 module.exports = jaroWinklerDistance;
