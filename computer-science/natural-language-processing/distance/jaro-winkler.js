@@ -1,6 +1,8 @@
 /**
  * functions that computes the Jaro and Winkler distances between two strings.
  * Influenced by https://github.com/NaturalNode/natural
+ *
+ * NOTE: still off by ~10%
 */
 
 /**
@@ -26,9 +28,11 @@ function jaroDistance(stringA, stringB) {
 	var lenA = stringA.length;
 	var lenB = stringB.length;
 	var maxLen = Math.max(lenA, lenB);
+	var tracker = 0;
 
 	var sieve = { a: new Array(lenA), b: new Array(lenB) };
 	var matchingRange = (Math.floor(maxLen / 2) - 1);
+
 	var matching = 0; // sequential character matches
 	var transpositions = 0; // non-sequential character matches within the matching range
 	var jaro = 0.0;
@@ -41,38 +45,73 @@ function jaroDistance(stringA, stringB) {
 	for (var x = 0; x < lenA; x++) {
 		var cA = stringA[x];
 		var cB = stringB[x];
+		var found = false;
 
-		if (cA == cB) { matching++; } // sequential character match
-		else {
-			var found = false;
+		// sequential character match
+		if (cA == cB) {
+			sieve.a[i] = sieve.b[i] = true;
+			found = true;
+			matching++;
+
+		} else {
 
 			/* check for transpositions within the ceiling range */
-			for (var i = x; i < i + matchingRange && i < lenB && found == false; i++) {
-				var tCeil= stringB[i];
+			for (var i = x; i < i + matchingRange && i < lenB && !found; i++) {
+				var tCeil = stringB[i];
 
-				if (tCeil == cA) { matching++; transpositions++; found = true; }
+				if (tCeil == cA) {
+					if (!sieve.a[x] && !sieve.b[i]) {
+						matching++;
+					}
+
+					sieve.a[x] = sieve.b[i] = true;
+					found = true;
+				}
 			}
 
 			/* check for transpositions within the floor range */
-			for (var j = x; j > j - matchingRange && j > -1 && found == false; j--) {
+			for (var j = x; j > j - matchingRange && j > -1 && !found; j--) {
 				var tFloor = stringB[j];
 
-				if (tFloor == cA) { matching++; transpositions++; found = true; }
+				if (tFloor == cA) {
+					if (!sieve.a[x] && !sieve.b[j]) {
+						matching++;
+					}
+
+					sieve.a[x] = sieve.b[j] = true;
+					found = true;
+				}
 			}
 		}
 	}
 
-	console.log(transpositions)
-	transpositions = transpositions / 2.0;
+	/* count transposition, defined as matching characters */
+	for (var k = 0; k < lenA; k++) {
+		if (sieve.a[tracker]) {
+			while (!sieve.b[tracker] && tracker < sieve.b.length) {
+				tracker++;
+			}
+			if (stringA[k] != stringB[tracker] && tracker < sieve.b.length) {
+				transpositions++;
+			}
 
-	console.log(stringA, stringB);
-	console.log('MATCHING RANGE: ' + matchingRange);
-	console.log(matching, transpositions);
+			tracker++;
+		}
+	}
+
+	transpositions = transpositions / 2.0;
 
 	if (matching != 0) {
 		jaro = ((matching / lenA ) + (matching / lenB) + ((matching - transpositions) / matching)) / 3;
+	} else {
+		jaro = 0.0;
 	}
 
+	console.log(stringA, stringB);
+	console.log('MATCHING RANGE: ' + matchingRange);
+	console.log(sieve.a);
+	console.log(sieve.b);
+	console.log(matching, transpositions);
 	console.log('JARO: ' + jaro);
 
 	return jaro;
