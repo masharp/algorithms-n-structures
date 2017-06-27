@@ -1,4 +1,6 @@
-/** given a string input, determine if the string is a permutation of a palindrome **/
+/** given a string input, determine if the string is a permutation of a palindrome
+** TODO: Should be optimized
+**/
 'use strict';
 
 const testA = 'Tact coa'; // true
