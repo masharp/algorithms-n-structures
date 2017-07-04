@@ -21,18 +21,18 @@ PriorityQueue.prototype.isEmpty = function() {
 
 PriorityQueue.prototype.insert = function(v) {
     this.heap[++this.N] = v;
-    this.swim(N);
+    this.swim(this.N);
 }
 
 PriorityQueue.prototype.removeMax = function() {
     const max = this.heap[1];
 
-    this.exchange(1, N--);
-    this.heap[N + 1] = null;
+    this.exchange(1, this.N--);
+    this.heap[this.N + 1] = null;
 
     this.sink(1);
 
-    return max; 
+    return max;
 }
 
 /* restore the heap order when a new node is added at the bottom or a node's priority
@@ -49,13 +49,13 @@ PriorityQueue.prototype.swim = function(k) {
 /* restore the heap order when a node's priority has decreased, such as when
  * the root is exchanged with a smaller key (top-down restore)
  */
-PriorityQueue.prototypes.sink = function(k) {
+PriorityQueue.prototype.sink = function(k) {
 
     /* compare parent node with two children and exchange if necessary */
-    while (2 * k <= this.size) {
+    while (2 * k <= this.N) {
         const j = 2 * k;
 
-        if (j < this.size && this.isLess(j, j + 1)) { j++; }
+        if (j < this.N && this.isLess(j, j + 1)) { j++; }
         if (!this.isLess(k, j)) { break; }
 
         this.exchange(k, j);
@@ -70,8 +70,17 @@ PriorityQueue.prototype.isLess = function(x, y) {
 
 /* exchange the values of two nodes to restore heap order */
 PriorityQueue.prototype.exchange = function(x, y) {
-    const node = new Node(this.heap[x]);
+    const node = this.heap[x];
 
     this.heap[x] = this.heap[y];
-    this.hea[y] = node;
+    this.heap[y] = node;
 }
+
+const pq = new PriorityQueue();
+
+pq.insert(10);
+pq.insert(11);
+pq.insert(12);
+pq.insert(13);
+
+console.log(pq.heap);

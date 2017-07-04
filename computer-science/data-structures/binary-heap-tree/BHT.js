@@ -30,7 +30,7 @@ BinaryHeapTree.prototype.swim = function(k) {
 /* restore the heap order when a node's priority has decreased, such as when
  * the root is exchanged with a smaller key (top-down restore)
  */
-BinaryHeapTree.prototypes.sink = function(k) {
+BinaryHeapTree.prototype.sink = function(k) {
 
     /* compare parent node with two children and exchange if necessary */
     while (2 * k <= this.size) {
@@ -51,8 +51,8 @@ BinaryHeapTree.prototype.isLess = function(x, y) {
 
 /* exchange the values of two nodes to restore heap order */
 BinaryHeapTree.prototype.exchange = function(x, y) {
-    const node = new Node(this.heap[x]);
-    
+    const node = this.heap[x];
+
     this.heap[x] = this.heap[y];
-    this.hea[y] = node;
+    this.heap[y] = node;
 }
