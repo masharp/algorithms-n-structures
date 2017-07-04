@@ -22,8 +22,9 @@ function BinaryHeapTree() {
 BinaryHeapTree.prototype.swim = function(k) {
 
     /* compare child node to parent and exchange if necessary */
-    while (k > 1 && this.isLess(k / 2, k)) {
-        this.exchange(k / 2, k);
+    while (k > 1 && this.isLess(k / 2 | 0, k)) {
+        this.exchange(k / 2 | 0, k);
+        k = k / 2 | 0;
     }
 }
 
@@ -34,10 +35,10 @@ BinaryHeapTree.prototype.sink = function(k) {
 
     /* compare parent node with two children and exchange if necessary */
     while (2 * k <= this.size) {
-        const j = 2 * k;
+        let j = 2 * k;
 
-        if (j < this.size && this.isLess(j, j + 1)) { j++; }
-        if (!this.isLess(k, j)) { break; }
+        if (j < this.size && this.isLess(j, j + 1)) j++;
+        if (!this.isLess(k, j)) break;
 
         this.exchange(k, j);
         k = j;
