@@ -12,16 +12,16 @@
 
          for (int i = numArray.length - 2; i >= 0; i--) {
              if (numArray[i] >= unsortedValue) {
-                 numArray[i+1] = numArray[i];
+                 numArray[i + 1] = numArray[i];
 
              }
              if (numArray[i] < unsortedValue) {
-                 numArray[i+1] = unsortedValue;
+                 numArray[i + 1] = unsortedValue;
 
                  break;
              }
              if (i == 0) {
-                 numArray[i+1] = numArray[i];
+                 numArray[i + 1 ] = numArray[i];
                  numArray[i] = unsortedValue;
 
              }
