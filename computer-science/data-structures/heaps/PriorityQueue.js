@@ -11,6 +11,10 @@ function PriorityQueue() {
     this.size = 0;
 }
 
+PriorityQueue.prototype.sort = function() {
+    
+}
+
 PriorityQueue.prototype.size = function() {
     return this.size;
 }
