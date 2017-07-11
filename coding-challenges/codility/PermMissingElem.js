@@ -27,6 +27,43 @@ expected worst-case space complexity is O(1), beyond input storage (not counting
 Elements of input arrays can be modified.
  */
 
-function solution(A) {
+ const testA = [2, 3, 1, 5, null]; // 4
 
+/* add the contents of A and the appropriate contents of A, subtract. avoids sort */
+function solution(A) {
+    const N = A.length;
+    let countA = 0;
+    let countB = 0;
+
+    if (N === 0) { return -1; }
+
+    for (let x = 0; x < N; x++) {
+        countA += A[x] != null ? A[x] : 0;
+        countB += x + 1;
+    }
+
+    return countB - countA;
 }
+
+/* algorithm with a better average case due to sorting and the break */
+function solutionTwo(A) {
+    const N = A.length;
+
+    if (N === 0) { return -1; }
+
+    A = A.sort((a, b) => a > b);
+
+    for (let x = N - 1; x > 0; x--) {
+        const a = A[x];
+        const b = x + 1;
+
+        if (a !== b) {
+            return b;
+        }
+    }
+
+    return 0;
+}
+
+console.log(solution(testA));
+console.log(solutionTwo(testA));
