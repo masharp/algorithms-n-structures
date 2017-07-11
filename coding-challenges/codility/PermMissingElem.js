@@ -35,9 +35,7 @@ function solution(A) {
     let countA = 0;
     let countB = 0;
 
-    if (N === 0) { return -1; }
-
-    for (let x = 0; x < N; x++) {
+    for (let x = 0; x < N + 1; x++) {
         countA += A[x] != null ? A[x] : 0;
         countB += x + 1;
     }
@@ -45,25 +43,4 @@ function solution(A) {
     return countB - countA;
 }
 
-/* algorithm with a better average case due to sorting and the break */
-function solutionTwo(A) {
-    const N = A.length;
-
-    if (N === 0) { return -1; }
-
-    A = A.sort((a, b) => a > b);
-
-    for (let x = N - 1; x > 0; x--) {
-        const a = A[x];
-        const b = x + 1;
-
-        if (a !== b) {
-            return b;
-        }
-    }
-
-    return 0;
-}
-
 console.log(solution(testA));
-console.log(solutionTwo(testA));
