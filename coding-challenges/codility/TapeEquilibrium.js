@@ -12,6 +12,7 @@ const testA = [3, 1, 2, 4, 3]; // 1
 const testB = [5, 10, -12, 15, 9, 1, 102] // 74
 const testC = [0, 1]; // 1
 
+/* complexity (N * N) */
 function solution(A) {
     const N = A.length;
     let min = -1;
@@ -29,6 +30,26 @@ function solution(A) {
     return min;
 }
 
-console.log(solution(testA));
-console.log(solution(testB));
-console.log(solution(testC));
+/* complexity (N) */
+function solutionTwo(A) {
+    const N = A.length;
+    let initialSum = A.reduce((a, b) => a + b);
+    let testSum = 0;
+    let min = -1;
+
+    for (let p = 1; p < N; p++) {
+        testSum += A[p - 1];
+        initialSum -= A[p - 1];
+
+        if (Math.abs(testSum - initialSum) < min || min == -1) {
+            min = Math.abs(testSum - initialSum);
+        }
+    }
+
+    return min;
+}
+
+
+console.log(solutionTwo(testA));
+console.log(solutionTwo(testB));
+console.log(solutionTwo(testC));
