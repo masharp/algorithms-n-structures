@@ -1,4 +1,4 @@
-#useful-algorithms & algorithm-challenges
+##useful-algorithms & algorithm-challenges##
 Algorithms and data structures written by me to solve simple to complex problems.
 Languages include Java, Python, JavaScript and a bit of Ruby. Some are pretty good,
 some are hacked together.  
@@ -10,7 +10,7 @@ for future use, and to potentially help others along the way.
 [Software on the Shore](http://www.softwareontheshore.com)    
 [@sharp_mi](https://twitter.com/sharp_mi)  
 
-##Algorithms Include:
+##Algorithms Include:##
   * Sorting (QuickSort.js, MergeSort.js, etc.)
   * Searching (BinarSearch.js)
   * Data Structures (Trees.java, LinkedList.java, etc.)
