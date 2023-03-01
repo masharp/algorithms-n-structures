@@ -1,7 +1,5 @@
 # Solution to Code Eval's Reverse Words Challenge, written in python
 # https://www.codeeval.com/open_challenges/8/
-#
-# michael@softwareontheshore.com
 
 import sys
 

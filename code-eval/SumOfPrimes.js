@@ -1,7 +1,5 @@
 /** Solution to Code Eval's Sum of Primes challenges
 * https://www.codeeval.com/open_challenges/4/
-*
-* michael@softwareontheshore.com
 */
 
 'use strict';

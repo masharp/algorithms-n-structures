@@ -1,8 +1,6 @@
 """
 My solution to CodeEval's First Non-Repeated Character Algorithm Challange (Moderate)
 https://www.codeeval.com/open_challenges/12/
-
-michael@softwareontheshore.com
 """
 
 import sys

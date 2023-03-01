@@ -5,7 +5,6 @@
  * expected worst-case time complexity is O(log(N));
  * expected worst-case space complexity is O(1)
  * https://codility.com/programmers/lessons/1-iterations/binary_gap/
- * michael@softwareontheshore.com
  */
 
 'use strict';

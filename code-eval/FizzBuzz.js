@@ -2,8 +2,6 @@
  * My solution to the CodeEval challenge 'Fizz Buzz'
  * https://www.codeeval.com/open_challenges/1/
  * Difficulty: Easy
- *
- * michael@softwareontheshore.com
  */
 
 /**

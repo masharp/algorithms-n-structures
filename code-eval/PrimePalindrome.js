@@ -1,8 +1,6 @@
 /**
  * My solution to CodeEval's Prime Palindrome, using three functions.
  * https://www.codeeval.com/open_challenges/3/
- *
- * michael@softwareontheshore.com
  */
 
 
