@@ -1,10 +1,6 @@
 """
 This is a Bubble Sort sorting algorithm that compares each element in pairs
 of adjacent elements.
-
- - by Michael Sharp
- - michael@softwareontheshore.com
- - www.softwareontheshore.com
 """
 numArray = [ 12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663,
             99, 46, 2, 124, 18, 22, 144, 1235, 29772, 1912873, -19, 928282,

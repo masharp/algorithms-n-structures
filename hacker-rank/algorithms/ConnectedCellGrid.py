@@ -3,8 +3,6 @@
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/connected-cell-in-a-grid
 *
-* michael@softwareontheshore.com
-*
 * TODO: Recursively call DFS on each possible element, checking it's neighbors
 *       and adding together the connections
 """

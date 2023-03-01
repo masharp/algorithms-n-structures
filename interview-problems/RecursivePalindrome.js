@@ -1,9 +1,5 @@
 /*  This is an implementation of a recursive algorithm designed to determine if a string is a palindrome.
     A paldinrome is a string that reads the same forward as it does backward.
-
-    by Michael Sharp
-    www.softwareontheshore.com
-    michael@softwareontheshore.com
     ---------------------------------
     Psudocode:
       - if string is empty or 1 character

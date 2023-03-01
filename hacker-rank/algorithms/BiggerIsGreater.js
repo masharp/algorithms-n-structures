@@ -1,9 +1,6 @@
 /**
  * JavaScript Solution to Bigger Is Greater HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/bigger-is-greater
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 const testA = 'ab'; // ba
 const testB = 'bb'; // no answer

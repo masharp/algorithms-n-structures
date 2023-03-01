@@ -4,9 +4,6 @@
  * - Given n sticks of positive integer length, create a polygon using al n sticks.
  * - A stick can be cut into two smaller sticks. Print the minimum number of cuts
  * - necessary to create a non-degenerate polygon (closed shape of 3+ sides with no overlap)
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
 'use strict';

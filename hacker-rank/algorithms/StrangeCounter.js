@@ -1,9 +1,6 @@
 /**
  * JavaScript Solution to HackerRank's 'Strange Counter' Algorithm Challenge
  * https://www.hackerrank.com/challenges/strange-code
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
 const testA = 4; // 6

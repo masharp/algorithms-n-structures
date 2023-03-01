@@ -1,8 +1,6 @@
 /**
  * JavaScript Solution to HackerRank's Circular Array Rotation Algorithm Challenge
  * https://www.hackerrank.com/challenges/circular-array-rotation
- *
- * michael@softwareontheshore.com
  */
 
 const testA = [3, 2, 1];

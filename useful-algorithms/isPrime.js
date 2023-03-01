@@ -1,8 +1,6 @@
 /**
  * Uses a loop to check all digits below a values square root to determine if
  * an integer is prime
- *
- * http://www.softwareontheshore.com
  */
 
 

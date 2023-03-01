@@ -1,8 +1,6 @@
 /**
  * Java Solution to Jumping on Clouds: Revisted HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited
- *
- * michael@softwareontheshore.com
  */
 
 import java.io.*;

@@ -1,9 +1,6 @@
 /**
  * JavaScript Solution to HackerRank's 'CamelCase' Algorithm Challenge
  * https://www.hackerrank.com/challenges/camelcase
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
 const testA = 'saveChangesInTheEditor'; // 5

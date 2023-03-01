@@ -1,9 +1,7 @@
 /**
  * JavaScript Solution to HackerRank's 'Non-Divisible Subset' Algorithm Challenge
  * https://www.hackerrank.com/challenges/non-divisible-subset
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
+ * 
  * NOTE: Currently only passes two of fifteen cases.
  */
 

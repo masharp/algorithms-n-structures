@@ -1,10 +1,6 @@
 /* A JavaScript implementation of the Knuth-Morris-Pratt string searching algorithm,
   as described here: https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
 
-  www.softwareontheshore.com
-  michael@softwareontheshore.com
-  Michael Sharp 2016
-
   Psudocode:
     input:
         an array of characters, S (the text to be searched)

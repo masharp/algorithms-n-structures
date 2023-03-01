@@ -1,8 +1,6 @@
 /**
  * JavaScript Solution to HackerRank Algorithm Challenge Jumping on Clouds
  * https://www.hackerrank.com/challenges/jumping-on-the-clouds
- *
- * michael@softwareontheshore.com
  */
 
 var testA = [0, 0, 1, 0, 0, 1, 0]; // 4

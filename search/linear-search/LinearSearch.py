@@ -1,10 +1,6 @@
 """
 This is a Linear Search searching algorithm that searches each element of an
 arraylinearly to find the target item
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 """
 
 numArray = [ 12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234,

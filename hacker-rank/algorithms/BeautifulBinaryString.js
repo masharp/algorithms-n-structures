@@ -1,9 +1,6 @@
 /**
  * JavaScript Solution to HackerRank's 'Beautiful Binary String' Algorithm Challenge
  * https://www.hackerrank.com/challenges/beautiful-binary-string
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
 const testA = '0101010'; // 2

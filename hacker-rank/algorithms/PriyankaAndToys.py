@@ -2,8 +2,6 @@
 * Priyanka and Toys (Python)
 * HackerRank Algorithm Challegen
 * https://www.hackerrank.com/challenges/priyanka-and-toys
-*
-* michael@softwareontheshore.com
 """
 
 testA = '1 2 3 17 10'

@@ -1,7 +1,5 @@
 ## My solution to the Candies HackerRank Algorithm Challenge (Dynamic Programming)
 ## https://www.hackerrank.com/challenges/candies
-##
-## michael@softwareontheshore.com
 
 # test cases
 kidsA = [1, 2, 2]

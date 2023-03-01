@@ -2,8 +2,6 @@
 * Maximise Sum (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/maximise-sum
-*
-* michael@softwareontheshore.com
 """
 
 testAA = '5 7'.split(' ')[1]

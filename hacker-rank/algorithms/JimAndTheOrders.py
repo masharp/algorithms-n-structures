@@ -2,8 +2,6 @@
 * Jim and the Orders (Python)
 * HackerRank Algorithm Challegen
 * https://www.hackerrank.com/challenges/jim-and-the-orders
-*
-* michael@softwareontheshore.com
 """
 
 testA = [[1, 3],[2, 3], [3, 3]]

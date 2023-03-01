@@ -1,8 +1,5 @@
 /**
  * JavaScript Solution to MinimumDistance HackerRank Algorithm Challenge
- * http://
- *
- * michael@softwareontheshore.com
  */
 
 'use strict';

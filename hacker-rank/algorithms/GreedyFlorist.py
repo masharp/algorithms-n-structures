@@ -2,8 +2,6 @@
 * Greedy Florist (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/greedy-florist
-*
-* michael@softwareontheshore.com
 """
 testAA = 3
 testAB = 3

@@ -1,7 +1,3 @@
-/**
- *
- */
-
 const testA = [0, 1, 0, 1, 1]; // 5
 
 function solution(A) {

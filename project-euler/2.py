@@ -2,8 +2,6 @@
 * Python Solution to ProjectEuler's Problem #2
 * https://projecteuler.net/problem=2
 *
-* michael@softwareontheshore.com
-*
 * Useful Resource: www.mathblog.dk
 """
 

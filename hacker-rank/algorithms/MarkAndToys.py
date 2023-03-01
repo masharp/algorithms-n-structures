@@ -2,8 +2,6 @@
 * Mark and Toys (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/mark-and-toys
-*
-* michael@softwareontheshore.com
 """
 testAA = [1, 12, 5, 111, 200, 1000, 10]
 testAB = 50

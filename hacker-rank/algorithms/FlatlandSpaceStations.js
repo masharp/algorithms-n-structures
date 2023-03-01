@@ -1,8 +1,6 @@
 /**
  * JavaScript Solution to Flatland Space Stations HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/flatland-space-stations
- *
- * softwareontheshore.com
  */
 'use strict';
 

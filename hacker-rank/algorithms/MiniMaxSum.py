@@ -3,8 +3,6 @@
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/mini-max-sum
  *
- * michael@softwareontheshore.com
- *
  * The goal is to find the minimum sum and the maximum sum of 5 numbers by only using 4.
  """
 

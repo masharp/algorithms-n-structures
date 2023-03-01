@@ -2,9 +2,7 @@
  * Palindrome Index (JavaScript)
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/palindrome-index
- *
- * michael@softwareontheshore.com
- *
+ * 
  * NOTE: Currently passes half of test cases. Times out on large cases
  */
 'use strict';

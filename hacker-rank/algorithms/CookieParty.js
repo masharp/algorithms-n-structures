@@ -3,9 +3,6 @@
  *
  * - Given N guests and M cookies how many cookies must be baked for each guest
  * - to have an even number of cookies
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
 'use strict';

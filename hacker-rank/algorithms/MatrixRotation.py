@@ -3,8 +3,6 @@
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/matrix-rotation-algo
 *
-* michael@softwareontheshore.com
-*
 * Currently rotates the columns by 90 degrees.
 * Need to work on rotating by index
 """

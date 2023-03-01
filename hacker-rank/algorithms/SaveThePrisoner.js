@@ -1,8 +1,6 @@
 /**
  * Save the Prisonsers! HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/save-the-prisoner
- *
- * michael@software on the shore
  */
 
 'use strict';

@@ -1,8 +1,6 @@
 /**
  * A brute force JavaScript algorithm that uses two for-loops to find all
  * sub-arrays of an array, in the current place. (NOT permutations)
- *
- * michael@softwareontheshore.com
  */
 
 'use strict';

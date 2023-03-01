@@ -9,9 +9,6 @@
  * the day.
  *
  * Performs at around .65ms on my system.
- *
- * 2016 Michael Sharp
- * michael@softwareontheshore.com
  */
 'use strict';
 

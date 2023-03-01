@@ -3,8 +3,6 @@
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/apple-and-orange
  *
- * michael@softwareontheshore.com
- *
  """
 
 testA = [73, 67, 38, 33] ## 75, 67, 40, 33

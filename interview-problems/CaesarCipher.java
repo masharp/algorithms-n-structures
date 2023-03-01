@@ -1,7 +1,4 @@
-/*Implements a Caesar's Cipher that only affects letter character inputs
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/*Implements a Caesar's Cipher that only affects letter character inputs */
 
 import java.io.*;
 import java.util.*;

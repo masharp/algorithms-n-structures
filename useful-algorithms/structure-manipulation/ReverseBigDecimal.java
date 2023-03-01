@@ -1,7 +1,4 @@
-/* Sorts a BigDecimal Array in reverseOrder
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* Sorts a BigDecimal Array in reverseOrder */
 
 import java.io.*;
 import java.math.BigDecimal;

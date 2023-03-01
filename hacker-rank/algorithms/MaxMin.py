@@ -2,8 +2,6 @@
 * Max Min (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/angry-children
-*
-* michael@softwareontheshore.com
 """
 
 testA = '10 100 300 200 1000 20 30'

@@ -2,8 +2,6 @@
 * Pangrams (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/pangrams
-*
-* michael@softewareontheshore.com
 """
 
 testA = 'We promptly judged antique ivory buckles for the next prize'

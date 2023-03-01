@@ -2,8 +2,6 @@
 * Gemstones (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/gem-stones
-*
-* michael@softwareontheshore.com
 """
 
 test = 'abcdde\nbaccd\neeabg'

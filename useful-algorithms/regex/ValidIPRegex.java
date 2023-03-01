@@ -1,8 +1,5 @@
 
-/* This algorithm uses a regex pattern to find valid IP addresses from a list of string inputs
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* This algorithm uses a regex pattern to find valid IP addresses from a list of string inputs */
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

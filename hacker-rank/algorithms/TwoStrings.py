@@ -2,9 +2,6 @@
  * Palindrome Index (Python)
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/two-strings
- *
- * michael@softwareontheshore.com
- *
  """
 
 testA = 'hello\nworld'

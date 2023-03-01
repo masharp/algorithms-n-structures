@@ -1,9 +1,5 @@
 /* This is a BinarySearch searching algorithm that divides in half the portion of the list that contains the item
 unit narrowed to just one. Returns the index of the item or -1 if not found.
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 */
 
 'use strict';

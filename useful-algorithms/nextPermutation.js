@@ -5,9 +5,6 @@
  * the pivot. Then you reverse the suffix and you have the next highest.
  *
  * Credit: https://www.nayuki.io/page/next-lexicographical-permutation-algorithm
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
 const testA = [0, 1, 2, 5, 3, 3, 0];

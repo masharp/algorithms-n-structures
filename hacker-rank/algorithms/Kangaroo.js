@@ -1,8 +1,6 @@
 /**
  * JavaScript Solution to the Kangaroo HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/kangaroo
- *
- * michael@softwareontheshore.com
  */
 
 const testA = { a: "0 5", b: "2 3" };

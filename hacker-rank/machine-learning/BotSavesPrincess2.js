@@ -4,9 +4,6 @@
  *
  * The princess ('p') is at one position in a string in an array. The player ('m') is at another.
  * Print the command for the next movement of the player towards the princess.
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
  function findPlayerMove(input) {

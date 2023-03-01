@@ -1,10 +1,6 @@
 /* This is a Quicksort sorting algorithm implemented with functional JavaScript
 and uses ES6 features. Recursively divides from the middle and filters each half
 until sorted.
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 */
 
 'use strict';

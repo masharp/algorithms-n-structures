@@ -3,8 +3,6 @@
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/grading
  *
- * michael@softwareontheshore.com
- *
  * For each grade of the n grades, print the rounded grade on a new line.
  """
 

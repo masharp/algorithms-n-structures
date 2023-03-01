@@ -2,8 +2,6 @@
  * Sherlock and Array (Python)
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/sherlock-and-array
- *
- * michael@softwareontheshore.com
 """
 testA = [1, 2, 3]
 testB = [1, 2, 3, 3]

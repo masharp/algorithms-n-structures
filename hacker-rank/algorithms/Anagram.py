@@ -2,8 +2,6 @@
 * Anagram (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/anagram
-*
-* michael@softwareontheshore.com
 """
 
 testA = 'aaabbb'

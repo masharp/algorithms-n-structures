@@ -1,7 +1,4 @@
-/* A method for taking an exception's print stack trace into a usable String.
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* A method for taking an exception's print stack trace into a usable String. */
 
 public static String exceptionTraceToString(Exception ex) {
 		ByteArrayOutputStream byteArrayStream = new ByteArrayOutputStream();

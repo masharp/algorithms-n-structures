@@ -1,9 +1,5 @@
 /* This is a Bubble Sort sorting algorithm that compares each element in pairs
    of adjacent elements.
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 */
 
 'use strict';

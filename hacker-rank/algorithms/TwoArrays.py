@@ -2,8 +2,6 @@
 * Two Arrays (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/two-arrays
-*
-* michael@softwareontheshore.com
 """
 
 testAA = 10

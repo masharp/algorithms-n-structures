@@ -1,12 +1,5 @@
 /*  This is an implementation of an algorithm to recursively find the result
     of a number raised to a power.
-
-    by Michael Sharp
-    www.softwareontheshore.com
-    michael@softwareontheshore.com
-    ---------------------------------
-    Psudocode:
-
 */
 var num = Math.floor(Math.random() * 50);
 var power = Math.floor(Math.random() * 10);

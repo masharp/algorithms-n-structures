@@ -1,9 +1,6 @@
 =begin
   - Ruby Solution to the HackerRank Algorithm Problem Modified Kaprekar Numbers
   - https://www.hackerrank.com/challenges/kaprekar-numbers
-
-  - www.softwareontheshore.com
-  - Michael Sharp
 =end
 
 p1 = 1

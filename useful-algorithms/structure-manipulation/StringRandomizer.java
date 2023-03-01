@@ -1,7 +1,4 @@
-/* A method for taking that generates a random string of defined length based on a string of parameters
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* A method for taking that generates a random string of defined length based on a string of parameters */
 
 
 public String generateRandomString() {

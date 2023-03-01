@@ -1,8 +1,6 @@
 /**
  * JavaScript Solution to HackerRank's Fair Rations Algorithm Challenge
  * https://www.hackerrank.com/challenges/fair-rations
- *
- * softwareontheshore.com
  */
 
 'use strict';

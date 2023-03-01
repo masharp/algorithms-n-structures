@@ -2,10 +2,6 @@
  all smaller elements to the front of the pivot. This is repeated until sorted. Uses the middle element
  of the array.
 
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
-
 ------------------------------------------
     Psudocode:
       - QuickSort(array, front, end)

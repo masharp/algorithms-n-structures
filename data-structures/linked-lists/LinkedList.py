@@ -1,8 +1,6 @@
 """
  * A straightfoward implementation of a classic Singly Linked List data
  * structure in Python.
- *
- * www.softwareontheshore.com
 """
 
 class Node(object):

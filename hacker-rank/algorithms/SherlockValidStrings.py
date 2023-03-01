@@ -2,8 +2,6 @@
 * Sherlock and Valid Strings (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/sherlock-and-valid-string
-*
-* michael@softwareontheshore.com
 """
 from collections import Counter
 

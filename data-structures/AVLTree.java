@@ -1,8 +1,4 @@
-/* An AVL tree implementation with insert and balance methods
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
-
+/* An AVL tree implementation with insert and balance methods */
 // ----------------- IN PROGRESS ----------------------------
 
 public class Node {

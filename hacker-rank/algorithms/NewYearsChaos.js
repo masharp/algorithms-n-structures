@@ -2,8 +2,6 @@
  * New Years Chaos (JavaScript)
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/new-year-chaos
- *
- * michael@softwareontheshore.com
  */
 'use strict';
 

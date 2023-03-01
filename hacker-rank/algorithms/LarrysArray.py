@@ -2,8 +2,6 @@
 * Larry's Array (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/larrys-array
-*
-* michael@softwareontheshore.com
 """
 
 test = [ '3', '3', '3 1 2', '4', '1 3 4 2', '5', '1 2 3 5 4' ]

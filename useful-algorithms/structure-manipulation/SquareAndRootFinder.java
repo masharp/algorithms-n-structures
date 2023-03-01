@@ -1,8 +1,6 @@
-/* This function uses an algorithm to find the number of square numbers within a range of numbers. The integer number checker is useful.
-
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* This function uses an algorithm to find the number of square numbers within a range of numbers. 
+The integer number checker is useful.
+*/
 
 public static int squareCount(int a, int b) {
             int count = 0;

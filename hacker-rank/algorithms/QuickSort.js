@@ -3,8 +3,6 @@
  * HackerRank Sorting Algorithm Challenge
  * https://www.hackerrank.com/challenges/quicksort1
  * https://www.hackerrank.com/challenges/quicksort2
- *
- * michael@softwareontheshore.com
  */
 const test = [4, 5, 3, 7, 2];
 

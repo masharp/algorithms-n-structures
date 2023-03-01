@@ -1,8 +1,6 @@
 /* Program that takes two values and finds the prime number between them
 such that m <= p <= n. uses the sieve of eratosthanese algorithm
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+*/
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -2,9 +2,6 @@
   to subsequent values. If a greater value is found, shifts to the right and inserts
   unsorted element there.
 
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com
     ------------------------------------
 
     Psudocode:

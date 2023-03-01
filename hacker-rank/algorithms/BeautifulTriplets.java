@@ -1,8 +1,6 @@
 /**
  * Java Solution to HackerRank's Algorithm Challenge Beautiful Triplets
  * https://www.hackerrank.com/challenges/beautiful-triplets
- *
- * michael@softwareontheshore.com
  */
  import java.io.*;
  import java.util.*;

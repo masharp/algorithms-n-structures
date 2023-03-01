@@ -1,9 +1,6 @@
 /**
  * JavaScript Solution to HackerRank's Super Reduced String Algorithm Challenge
  * https://www.hackerrank.com/challenges/reduced-string
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
  */
 
 const testA = 'aaabccddd'; // abd

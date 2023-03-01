@@ -2,8 +2,6 @@
 * Missing Numbers (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/missing-numbers
-*
-* michael@softwareontheshore.com
 """
 from collections import Counter
 testAA = [203, 204, 205, 206, 207, 208, 203, 204, 205, 206]

@@ -1,10 +1,6 @@
 /* This is a Selection Sort sorting algorithm that compares each element in the
   array to the rest of the array in search of a smaller element. If found - swaps
   positions in order to sort array
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 */
 'use strict';
 

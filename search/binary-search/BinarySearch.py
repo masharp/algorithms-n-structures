@@ -1,10 +1,6 @@
 """
 This is a BinarySearch searching algorithm that divides in half the portion of the list that contains the item
 unit narrowed to just one. Returns the index of the item or -1 if not found.
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 """
 
 numArray = [ 12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234,

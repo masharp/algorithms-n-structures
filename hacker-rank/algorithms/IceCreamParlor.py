@@ -2,8 +2,6 @@
 * Ice Cream Parlor (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/icecream-parlor
-*
-* michael@softwareontheshore.com
 """
 
 testAA = 4

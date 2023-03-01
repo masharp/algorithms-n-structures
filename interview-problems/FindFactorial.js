@@ -1,7 +1,4 @@
-/* A recursive function to find the factorial of a starting number -> zero. Useful for permutations.
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* A recursive function to find the factorial of a starting number -> zero. Useful for permutations. */
 
 function findFactorial(n) {
   var result = 0;

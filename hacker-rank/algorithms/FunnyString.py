@@ -2,8 +2,6 @@
 * Funny String (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/funny-string
-*
-* michael@softwareontheshore.com
 """
 testA = 'acxz'
 testB = 'bcxz'

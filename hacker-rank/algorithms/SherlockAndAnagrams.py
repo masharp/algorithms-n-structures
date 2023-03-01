@@ -2,8 +2,6 @@
 * Sherlock and Anagrams
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/sherlock-and-anagrams
-*
-* michael@softwareontheshore.com
 """
 
 testA = 'abba' # 4

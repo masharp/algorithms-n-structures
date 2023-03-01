@@ -1,8 +1,6 @@
 /**
  * Function and Jasmine tests that demonstrate a TDD FizzBuzz algorithm
  * variation called BingBoing
- *
- * michael@softwareontheshore.com
  */
 
 'use strict';

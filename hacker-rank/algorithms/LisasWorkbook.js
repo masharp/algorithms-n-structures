@@ -16,8 +16,6 @@
  *    Lisa believes a problem to be special if its index (within a chapter) is the same as
  *    the page number where it's located. Given the details for Lisa's workbook, can you
  *    count its number of special problems?
- *
- * michael@softwareontheshore.com
  */
 'use strict';
 

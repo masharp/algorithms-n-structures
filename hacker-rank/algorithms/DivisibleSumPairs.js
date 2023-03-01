@@ -1,8 +1,6 @@
 /**
  * JavaScript Solution to HackerRank Algorithm Challenge Divisble Sum Pairs
  * https://www.hackerrank.com/challenges/divisible-sum-pairs
- *
- * michael@softwareontheshore.com
  */
 
 const testA1 = [1, 3, 2, 6, 1, 2];

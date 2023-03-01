@@ -2,8 +2,6 @@
  * Love Letter Myster (JavaScript)
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/the-love-letter-mystery
- *
- * michael@softwareontheshore.com
  */
 'use strict';
 

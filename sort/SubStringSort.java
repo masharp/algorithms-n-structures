@@ -1,8 +1,5 @@
 /* This algorithm is designed to take N length substrings from a string and sort them
-   lexicographically in ascending order.
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+   lexicographically in ascending order. */
 
 import java.io.*;
 import java.util.*;

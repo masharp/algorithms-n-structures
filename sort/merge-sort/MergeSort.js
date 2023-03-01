@@ -2,10 +2,6 @@
   until sorted and then merges the two halves into a single sorted array. Sorts in
   ascending order.
 
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
-
   Inspired by:
     - Stoiman
     - http://www.stoimen.com/blog/2010/07/02/friday-algorithms-javascript-merge-sort/

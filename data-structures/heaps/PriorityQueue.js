@@ -1,7 +1,5 @@
 /**
  * JavaScript Custom Implementation of a Priority Queue data structure
- *
- * michael@softwareontheshore.com
  */
 
  'use strict';

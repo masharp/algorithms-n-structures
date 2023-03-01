@@ -1,7 +1,4 @@
-/* A method for taking the first three characters of a string and tripling it
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* A method for taking the first three characters of a string and tripling it */
 
 import java.util.Scanner;
 

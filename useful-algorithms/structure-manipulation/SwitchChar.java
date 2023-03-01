@@ -1,7 +1,4 @@
-/* A method that takes the first and last characters in a string and switches them
- - by Michael Sharp
- - michael@softwareontheshore.com
-  - www.softwareontheshore.com */
+/* A method that takes the first and last characters in a string and switches them */
 
 import java.util.Scanner;
 

@@ -1,7 +1,4 @@
-/* LinkedList implementation with associated useful algorithms
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+/* LinkedList implementation with associated useful algorithms */
 
 public class Node {
   int data;

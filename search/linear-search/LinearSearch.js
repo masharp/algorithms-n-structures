@@ -1,10 +1,6 @@
 /*
   This is a Linear Search searching algorithm that searches each element of an
   array linearly to find the target item
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 */
 
 'use strict';

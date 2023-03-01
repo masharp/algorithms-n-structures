@@ -2,8 +2,6 @@
  * Insertion Sort Part 2
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/insertionsort2
- *
- * michael@softwareontheshore.com
  */
 'use strict';
 

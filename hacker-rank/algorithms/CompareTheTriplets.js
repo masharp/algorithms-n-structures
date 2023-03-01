@@ -1,8 +1,6 @@
 /**
  * Solution to HackerRank's Compare the Triplets Algorithm Challenge (Easy)
  * https://www.hackerrank.com/challenges/compare-the-triplets
- *
- * michael@softwareontheshore.com
  */
 
 const testA = [[5, 6, 7], [3, 6, 10]] // 1 1

@@ -1,8 +1,6 @@
 /**
  * HackerRank Encryption Challenge (JavaScript)
  * https://www.hackerrank.com/challenges/encryption
- *
- * michael@softwareontheshore.com
  */
 'use strict';
 

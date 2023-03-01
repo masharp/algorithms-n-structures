@@ -2,8 +2,6 @@
  * A Binary Heap Tree implemented in javaScript
  * A binary tree is heap ordered if the parent node is larger or equal than the
  * subsequent child nodes. The largest node in the tree is found at the root
- *
- * michael@softwareontheshore.com
  */
 
 

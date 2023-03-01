@@ -2,8 +2,6 @@
  * Larry's Array (JavaScript)
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/larrys-array
- *
- * michael@softwareontheshore.com
  */
 'use strict';
 

@@ -1,8 +1,6 @@
 /*
  * A straightfoward implementation of a classic Singly Linked List data
  * structure in JavaScript.
- *
- * www.softwareontheshore.com
  */
 
 /* an instance of the node object. Holds data and the pointer to the next node */

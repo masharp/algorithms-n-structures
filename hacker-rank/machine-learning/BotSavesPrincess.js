@@ -3,10 +3,7 @@
  * https://www.hackerrank.com/challenges/saveprincess
  *
  * The princess ('p') is at one position in a string in an array. The player ('m') is at another.
- * Print commands for the player to find the princess.
- *
- * Michael Sharp
- * http://www.softwareontheshore.com
+ * Print commands for the player to find the princess
  */
 
 

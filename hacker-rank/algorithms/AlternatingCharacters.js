@@ -2,8 +2,6 @@
  * Alternating Characters (JavaScript)
  * HackerRank Algorithm Challenge
  * https://www.hackerrank.com/challenges/alternating-characters
- *
- * michael@softwareontheshore.com
  */
 'use strict';
 

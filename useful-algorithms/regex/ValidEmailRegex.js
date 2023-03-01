@@ -2,9 +2,6 @@
     standard email rules. This regex is simple and checks for basic email address formatting - due
     to confusion regarding valid global email standards.
 
-    by Michael Sharp
-    www.softwareontheshore.com
-    michael@softwareontheshore.com
     ---------------------------------
 
 */

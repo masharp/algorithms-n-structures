@@ -1,9 +1,6 @@
 /**
  * JavaScript Custom Implementation of a Stack data structure
- *
- * michael@softwareontheshore.com
  */
-
 
 function Node(num) {
  this.num = num;

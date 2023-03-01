@@ -8,10 +8,7 @@
  * Uses a recursive strategy on the main array and looping on the profit peeking.
  * handles a day of poor stock performance by returning the least amount of loss possible
  *
- * Performs around 0.1ms on my system.
- *
- * 2016 Michael Sharp
- * michael@softwareontheshore.com
+ * Performs around 0.1ms on my system
  */
  'use strict';
 

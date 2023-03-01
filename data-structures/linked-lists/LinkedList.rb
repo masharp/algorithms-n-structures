@@ -1,8 +1,6 @@
 =begin
 * A straightfoward implementation of a classic Singly Linked List data
 * structure in Ruby.
-*
-* www.softwareontheshore.com
 =end
 
 class Node

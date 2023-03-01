@@ -2,10 +2,6 @@
 This is a Merge Sort sorting algorithm that divides itself in half and calls itself
 until sorted and then merges the two halves into a single sorted array. Sorts in
 ascending order.
-
-  - by Michael Sharp
-  - michael@softwareontheshore.com
-  - www.softwareontheshore.com
 """
 numArray = [ 12, 122, 222, 4, 5, 9, 12323, 99, 10, 1, 78, 123, 64234, 6663,
                   99, 46, 2, 124, 18, 22, 144, 1235, 29772, 1912873, -19, 928282,

@@ -1,8 +1,6 @@
 """
  * HackerRank Algorithm Problem Lisa's Workbook (JavaScript)
  * https://www.hackerrank.com/challenges/bear-and-workbook
- *
- * michael@softwareontheshore.com
  """
 testLineA = '5 3'
 testLineB = '4 2 6 1 10'

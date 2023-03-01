@@ -1,9 +1,6 @@
 /* A series of JavaScript methods for converting a numerical date range entry to an alpha-numerical
   date range entry, based on certain inferrence.
-  (ie,['2015-07-01', '2016-02-23'] ---> ["July 1st, 2015", "February 23rd, 2016"])
-    - by Michael Sharp
-    - michael@softwareontheshore.com
-    - www.softwareontheshore.com */
+  (ie,['2015-07-01', '2016-02-23'] ---> ["July 1st, 2015", "February 23rd, 2016"]) */
 
 function dateRangeConverter(str) {
   //create an array for each date given, splitting the [yy, mm, dd]

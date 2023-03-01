@@ -2,8 +2,6 @@
 * Game of Thrones - I (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/game-of-thrones
-*
-* michael@softwareontheshore.com
 """
 
 testA = 'aaabbbb'

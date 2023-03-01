@@ -2,8 +2,6 @@
 * Make It Anagram (Python)
 * HackerRank Algorithm Challenge
 * https://www.hackerrank.com/challenges/make-it-anagram
-*
-* michael@softwareontheshore.com
 """
 from collections import Counter
 

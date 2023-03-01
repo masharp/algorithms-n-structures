@@ -1,8 +1,5 @@
 /** Program that takes two values and finds the prime number between them
  * such that m <= p <= n. Uses the Sieve of Eratosthanese algorithm
- *    - by Michael Sharp
- *    - michael@softwareontheshore.com
- *    - www.softwareontheshore.com
  */
 
 /**
