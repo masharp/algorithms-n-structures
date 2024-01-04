@@ -10,7 +10,6 @@ class Solution {
         for (int x : nums) {
             int t = target - x;
             
-            
             if (values.get(t) != null) {
                 return new int[]{values.get(t), index}; // Assume exactly 1
             }
